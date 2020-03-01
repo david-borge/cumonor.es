@@ -89,12 +89,8 @@
             margin-left: 10px;
         }
 
-        .contacto {
-            max-width: 100%;
-        }
-
         #servicios {
-            margin: 35px 0;
+            margin: 35px 0 57px;
             font-size: 19px;
             color: #3c2a98;
             font-weight: bold;
@@ -103,6 +99,8 @@
         }
 
         .contacto {
+            max-width: 100%;
+
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
@@ -110,16 +108,26 @@
                 justify-content: space-around;
             -ms-flex-wrap: wrap;
                 flex-wrap: wrap;
+
+            text-align: center;
+            color: #3c2a98;
         }
 
-        .contacto div {
+        .contacto > div {
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+
+        .contacto div:not(.nombre) {
             white-space: nowrap;
             margin-bottom: 30px;
         }
 
-        .contacto div:first-child {
-            margin-right: 30px;
-            margin-left: 30px;
+        .contacto .nombre {
+            margin-right: 10px;
+            margin-bottom: 10px;
+            font-weight: bold;
+            white-space: nowrap;
         }
 
         .contacto a {
@@ -162,6 +170,10 @@
             }
         }
 
+        .una-linea {
+            white-space: nowrap;
+        }
+
     </style>
 
 </head>
@@ -176,20 +188,31 @@
         <div class="contacto">
 
             <div>
+                <div class="nombre">Francisco Borge González</div>
                 <i class="fa fa-phone-alt"></i>
                 <a href="tel:+34 646 487 829">646 487 829</a>
             </div>
 
             <div>
-                <i class="fa fa-envelope"></i>
-                <a href="mailto: cumonort2018@outlook.es">cumonort2018@outlook.es</a>
+                <div class="nombre">Fernando Ibáñez González</div>
+                <i class="fa fa-phone-alt"></i>
+                <a href="tel:+34 606 741 852">606 741 852</a>
             </div>
 
         </div>
 
         <div class="contacto">
-            <i class="fas fa-map-marker-alt" style='margin-top: 3px;'></i>
-            <a href="https://goo.gl/maps/uRWNK61esC7uNdWPA" target="_blank">Carretera Nacional 620, P.K. 76.4</a>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <a href="mailto: cumonort2018@outlook.es">cumonort2018@outlook.es</a>
+            </div>
+        </div>
+
+        <div class="contacto">
+            <a href="https://goo.gl/maps/uRWNK61esC7uNdWPA" target="_blank">
+                <span class="una-linea"><i class="fas fa-map-marker-alt" style='margin-top: 3px;'></i>Carretera Nacional 620, P.K. 76'4, </span>
+                <span class="una-linea">Magaz de Pisuerga, Palencia</span>
+            </a>
         </div>
 
         <div id="pagina-en-construccion">
