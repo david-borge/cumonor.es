@@ -1,0 +1,85 @@
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6">
+
+                    <h5>Todos nuestros servicios</h5>
+
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <h6>Naves industriales</h6>
+                            <p><a href="estructuras-metalicas.php">Estructuras Metálicas</a></li></p>
+                            <p><a href="cubiertas.php">Cubiertas</a></li></p>
+                            <p><a href="reformas.php">Reformas</a></li></p>
+                            <p><a href="reparaciones.php">Reparaciones</a></li></p>
+                            <p><a href="limpieza-y-mantenimiento-de-naves-industriales.php">Limpieza y Mantenimiento</a></li></p>
+                            <p><a href="naves-agricolas.php">Naves Agrícolas</a></li></p>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <h6>Viviendas</h6>
+                            <p><a href="limpieza-y-mantenimiento-de-viviendas.php">Limpieza y Mantenimiento</a></p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-6">
+
+                    <h5>Contacto</h5>
+
+                    <div class="footer-contacto">
+
+                        <div>
+                            <div class="nombre">Francisco Borge González</div>
+                            <i class="fa fa-phone-alt"></i>
+                            <a href="tel:+34 646 487 829">646 487 829</a>
+                        </div>
+
+                        <div>
+                            <div class="nombre">Fernando Ibáñez González</div>
+                            <i class="fa fa-phone-alt"></i>
+                            <a href="tel:+34 606 741 852">606 741 852</a>
+                        </div>
+
+                    </div>
+                    
+                    <div class="footer-contacto">
+                        <div>
+                            <i class="fa fa-envelope"></i>
+                            <a href="mailto: contacto&#64;cumonor.es">contacto&#64;cumonor.es</a>
+                        </div>
+                    </div>
+
+                    <div class="footer-contacto">
+                        <a href="https://goo.gl/maps/uRWNK61esC7uNdWPA" target="_blank">
+                            <span class="una-linea"><i class="fas fa-map-marker-alt" style='margin-top: 3px;'></i>Ir a la ubicación en Google Maps</span><br/>
+                            <span class="una-linea">Carretera Nacional 620, P.K. 76'4, </span>
+                            <span class="una-linea">Magaz de Pisuerga, Palencia</span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Google Analytics: Código de seguimiento -->
+    <amp-analytics type="gtag" data-credentials="include">
+        <script type="application/json">
+            {
+                "vars": {
+                    "gtag_id": "UA-161666641-1",
+                    "config": {
+                        "UA-161666641-1": {
+                            "groups": "default"
+                        }
+                    }
+                }
+            }
+        </script>
+    </amp-analytics>
+
+</body>
+
+</html>
