@@ -1,28 +1,33 @@
-    <footer>
+    <footer class="bg-light">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-9">
 
                     <h5>Todos nuestros servicios</h5>
 
                     <div class="row">
-                        <div class="col-12 col-md-6">
+                        <div class="col-12 col-md-3">
                             <h6>Naves industriales</h6>
                             <p><a href="estructuras-metalicas.php">Estructuras Metálicas</a></li></p>
                             <p><a href="cubiertas.php">Cubiertas</a></li></p>
                             <p><a href="reformas.php">Reformas</a></li></p>
                             <p><a href="reparaciones.php">Reparaciones</a></li></p>
                             <p><a href="limpieza-y-mantenimiento-de-naves-industriales.php">Limpieza y Mantenimiento</a></li></p>
-                            <p><a href="naves-agricolas.php">Naves Agrícolas</a></li></p>
                         </div>
-                        <div class="col-12 col-md-6">
+                        <div class="col-12 col-md-3">
+                            <h6><a href="naves-agricolas.php">Naves Agrícolas</a></li></h6>
+                        </div>
+                        <div class="col-12 col-md-3">
                             <h6>Viviendas</h6>
                             <p><a href="limpieza-y-mantenimiento-de-viviendas.php">Limpieza y Mantenimiento</a></p>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <h6><a href="taller-de-reparacion-de-maquinaria-agricola.php">Taller de reparación de maquinaria agrícola</a></li></h6>
                         </div>
                     </div>
 
                 </div>
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-3">
 
                     <h5>Contacto</h5>
 
@@ -51,7 +56,7 @@
 
                     <div class="footer-contacto">
                         <a href="https://goo.gl/maps/uRWNK61esC7uNdWPA" target="_blank">
-                            <span class="una-linea"><i class="fas fa-map-marker-alt" style='margin-top: 3px;'></i>Ir a la ubicación en Google Maps</span><br/>
+                            <span class="una-linea"><i class="fas fa-map-marker-alt" style='margin-top: 3px;'></i>Ver en Google Maps:</span><br/>
                             <span class="una-linea">Carretera Nacional 620, P.K. 76'4, </span>
                             <span class="una-linea">Magaz de Pisuerga, Palencia</span>
                         </a>

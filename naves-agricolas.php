@@ -2,7 +2,7 @@
 
 
   <!-- Título de esta página -->
-  <title>Estructuras metálicas | Cumonor - Cubiertas y Montajes Norte s.l.</title>
+  <title>Naves Agrícolas | Cumonor - Cubiertas y Montajes Norte s.l.</title>
 
   <!-- Description -->
   <meta name="description" content="Cumonor - Cubiertas y Montajes Norte s.l.">
@@ -12114,7 +12114,7 @@
             <div class="row">
                 <div class="col-12">
 
-                    <h1>Estructuras metálicas</h1>
+                    <h1>Naves Agrícolas</h1>
 
                     <p class="text-center">Subtítulo con <span class="destacar">texto destacado</span>.</p>
                     

@@ -54,416 +54,15 @@
   <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
   <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
   <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
-  <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.2.js"></script>
-  <script async custom-element="amp-image-lightbox" src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js"></script>
+  <script async custom-element="amp-lightbox-gallery" src="https://cdn.ampproject.org/v0/amp-lightbox-gallery-0.1.js"></script>
+  <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+  <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+  <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
+  <script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
 
 
   <!-- Mi CSS -->
   <style amp-custom>
-
-    /* General: fuentes */
-
-    /* Fin de General: fuentes */
-
-    /* Barra superior: Breadcrumbs, teléfono, emails y ubicación */
-    #barra-superior--breadcrumbs {
-        min-width: 130px;
-        font-size: 13px;
-    }
-
-    #barra-superior--telefono-emails-ubicacion {
-        width: 100%;
-        display: flex;
-        justify-content: flex-end;
-    }
-
-    #barra-superior--breadcrumbs-telefono-emails-ubicacion {
-        margin-bottom: 10px;
-        border-bottom: 1px solid #3c2a9638;
-        padding-bottom: 1px;
-    }
-
-    #barra-superior--breadcrumbs-telefono-emails-ubicacion #estas-aqui {
-        font-weight: bold;
-        margin-right: 10px
-    }
-
-    #barra-superior--breadcrumbs-telefono-emails-ubicacion .fa-chevron-right {
-        margin: 0 5px;
-    }
-
-    #barra-superior--breadcrumbs-telefono-emails-ubicacion #pagina-actual {
-        font-weight: bold;
-        color: #3c2a96;
-    }
-
-    .barra-superior--contacto {
-        max-width: 100%;
-
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-
-        text-align: center;
-        color: #3c2a98;
-    }
-
-    .barra-superior--contacto > div {
-        margin-right: 10px;
-        margin-left: 10px;
-        font-size: 13px;
-    }
-
-    .barra-superior--contacto div:not(.nombre) {
-        white-space: nowrap;
-    }
-
-    .barra-superior--contacto .nombre {
-        margin-right: 10px;
-        margin-bottom: 10px;
-        font-weight: bold;
-        white-space: nowrap;
-    }
-
-    .barra-superior--contacto a {
-        color: #3c2a98;
-        text-decoration: none;
-        font-size: 13px;
-        text-align: center;
-    }
-
-    .barra-superior--contacto a:hover {
-        color: #3c2a98;
-        text-decoration: underline;
-    }
-
-    .barra-superior--contacto .fa, .barra-superior--contacto .fas, .barra-superior--contacto .far, .barra-superior--contacto .fal, .barra-superior--contacto .fa {
-        color: #3c2a98;
-        margin-right: 6px;
-    }
-    /* Fin de Barra superior: Breadcrumbs, teléfono, emails y ubicación */
-
-    /* Navbar */
-    #nav-item--naves-industriales:hover #nav-item--dropdown-menu--naves-industriales {
-      display: block;
-    }
-    /* Fin de Navbar */
-
-    /* Sidebar */
-    #sidebar1-navbar-toggler-container {
-        display: flex;
-        justify-content: flex-end;
-    }
-
-    .navbar .navbar-toggler {
-        margin-top: 8px;
-    }
-
-    #sidebar1 .navbar-toggler {
-        margin: 16px 16px 0 0;
-    }
-
-    .mobile-nav {
-      text-align: right;
-    }
-
-    #sidebar1 ul {
-        padding-inline-start: 15px;
-        border-left: 1px solid #80808029;
-    }
-
-    #sidebar1 header {
-        border: none;
-        color: #212529
-    }
-
-    #sidebar1 a {
-        color: #212529
-    }
-
-    #sidebar1 a {
-        color: #212529
-    }
-
-    #sidebar1 amp-accordion li {
-        margin-left: 0;
-        padding-left: 0
-    }
-
-    #sidebar1 amp-accordion li a {
-        letter-spacing: normal
-    }
-
-    #sidebar1 header {
-        outline: none
-    }
-
-    .inner-nav ul:not(.dropdown-items) > li {
-        min-height: 50px
-    }
-
-    .inner-nav {
-      display: inline-block;
-      position: relative;
-      float: right
-    }
-
-    .inner-nav ul {
-      margin-right: 20px;
-      font-size: 14px;
-      font-weight: 400;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      text-align: center;
-      line-height: 1.3
-    }
-
-    .inner-nav ul li {
-      position: relative
-    }
-
-    .inner-nav ul li {
-      position: relative
-    }
-
-    .dropdown-items {
-      padding-inline-start: 0;
-    }
-
-    .dropdown-items > li > a {
-      line-height: 57px;
-    }
-
-    .inner-nav ul li a {
-      color: #777;
-      letter-spacing: 2px;
-      display: inline-block;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-      text-decoration: none;
-      -webkit-transition: all .27s cubic-bezier(0, 0, .58, 1);
-      -o-transition: all .27s cubic-bezier(0, 0, .58, 1);
-      transition: all .27s cubic-bezier(0, 0, .58, 1)
-    }
-
-    .inner-nav ul li a.active,
-    .inner-nav ul li a:hover {
-      color: #0081c6;
-      text-decoration: none
-    }
-
-    .inner-nav ul li .mn-sub li a {
-      display: block;
-      width: 100%;
-      height: auto;
-      line-height: 1.3;
-      position: relative;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-      margin: 0;
-      padding: 11px 15px;
-      font-size: 13px;
-      text-align: left;
-      text-transform: none;
-      border-left: none;
-      border-right: none;
-      letter-spacing: 0;
-      color: #b0b0b0;
-      cursor: pointer
-    }
-
-    .inner-nav ul li .mn-sub li a:hover,
-    .mn-sub li a.active,
-    .mn-sub li a:hover {
-      background: rgba(255, 255, 255, .09);
-      color: #f5f5f5
-    }
-
-    .inner-nav li .mn-sub.to-left,
-    .inner-nav>ul>li:last-child .mn-sub {
-      left: auto;
-      right: 0
-    }
-
-    .inner-nav li .mn-sub li ul.to-left,
-    .inner-nav li:last-child .mn-sub li ul {
-      left: auto;
-      right: 100%;
-      top: 0;
-      border-left: none;
-      border-right: 1px solid rgba(255, 255, 255, .07)
-    }
-
-    .mobile-on .inner-nav li:last-child .mn-sub li ul {
-      left: auto;
-      right: auto;
-      top: 0
-    }
-        
-    .inner-nav ul li .mn-sub li a:hover,
-    .mn-sub li a.active,
-    .mn-sub li a:hover {
-      background: rgba(255, 255, 255, .09);
-      color: #f5f5f5
-    }
-
-    .inner-nav li .mn-sub.to-left,
-    .inner-nav>ul>li:last-child .mn-sub {
-      left: auto;
-      right: 0
-    }
-
-    .inner-nav li .mn-sub li ul.to-left,
-    .inner-nav li:last-child .mn-sub li ul {
-      left: auto;
-      right: 100%;
-      top: 0;
-      border-left: none;
-      border-right: 1px solid rgba(255, 255, 255, .07)
-    }
-
-    .mobile-on .inner-nav li:last-child .mn-sub li ul {
-      left: auto;
-      right: auto;
-      top: 0
-    }
-
-    .clearlist, .clearlist li {
-      list-style: none;
-      margin: 0;
-      background: 0 0;
-    }
-    .movil-nav ul li {
-      float: none;
-      text-align: left;
-    }
-    .inner-nav ul li {
-      float: left;
-      margin-left: 20px;
-      position: relative;
-    }
-    #sidebar1 ul.clearlist {
-        min-width: 260px;
-    }
-    .inner-nav ul {
-        margin-right: 20px;
-        font-size: 14px;
-        font-weight: 400;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        text-align: center;
-        line-height: 1.3;
-    }
-    /* Fin de navbar */
-
-    /* Footer: Sticky footer */
-    html {
-      min-height: 100%;
-      height: 100%;
-    }
-
-    body {
-      min-height: 100vh;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-    }
-
-    main {
-      /* flex: 1; would be enough but IE has different defaults (surprise!) */
-      flex: 1 0 auto;
-    }
-    /* Fin de Footer: Sticky footer */
-
-
-    /* Footer: general */
-    footer {
-        padding-top: 50px;
-    }
-
-    footer h5 {
-        border-bottom: 1px solid #3c2a96;
-        font-size: 12px;
-        font-weight: bold;
-        color: #3c2a96;
-        text-transform: uppercase;
-        text-align: center;
-        margin-bottom: 15px;
-        padding-bottom: 10px;
-    }
-
-    footer h6 {
-        font-size: 12px;
-        font-weight: bold;
-        color: #3c2a96;
-    }
-
-    footer a {
-        font-size: 12px;
-        color: #3c2a96;
-    }
-
-    footer a:hover {
-        color: #3c2a96;
-    }
-    /* Footer: general */
-
-
-    /* Footer: Contacto (tercera columna) */
-    .footer-contacto {
-        max-width: 100%;
-
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-
-        text-align: center;
-        font-size: 12px;
-        color: #3c2a98;
-    }
-
-    .footer-contacto > div {
-        margin-right: 10px;
-        margin-left: 10px;
-    }
-
-    .footer-contacto div:not(.nombre) {
-        white-space: nowrap;
-        margin-bottom: 30px;
-    }
-
-    .footer-contacto .nombre {
-        margin-right: 10px;
-        margin-bottom: 10px;
-        font-weight: bold;
-        white-space: nowrap;
-    }
-
-    .footer-contacto a {
-        color: #3c2a98;
-        text-decoration: none;
-        text-align: center;
-    }
-
-    .footer-contacto a:hover {
-        color: #3c2a98;
-        text-decoration: underline;
-    }
-
-    .footer-contacto .fa, .footer-contacto .fas, .footer-contacto .far, .footer-contacto .fal, .footer-contacto .fa {
-        color: #3c2a98;
-        margin-right: 6px;
-    }
-    /* Fin de Footer: Contacto (tercera columna) */
-
 
     /* Bootstrap */
     :root {
@@ -525,11 +124,11 @@
 
   body {
       margin: 0;
-      font-family: 'Roboto', sans-serif;
+      font-family: Roboto, sans-serif;
       font-size: 1rem;
       font-weight: 400;
       line-height: 1.5;
-      color: #212529;
+      color: #1d1d1f;
       text-align: left;
       background-color: #fff
   }
@@ -1006,7 +605,7 @@
       padding: .2rem .4rem;
       font-size: 87.5%;
       color: #fff;
-      background-color: #212529;
+      background-color: #1d1d1f;
       border-radius: .2rem
   }
 
@@ -1019,7 +618,7 @@
   pre {
       display: block;
       font-size: 87.5%;
-      color: #212529
+      color: #1d1d1f
   }
 
   pre code {
@@ -2448,7 +2047,7 @@
   .table {
       width: 100%;
       margin-bottom: 1rem;
-      color: #212529
+      color: #1d1d1f
   }
 
   .table td,
@@ -2498,7 +2097,7 @@
   }
 
   .table-hover tbody tr:hover {
-      color: #212529;
+      color: #1d1d1f;
       background-color: rgba(0, 0, 0, .075)
   }
 
@@ -2903,7 +2502,7 @@
       margin-bottom: 0;
       font-size: 1rem;
       line-height: 1.5;
-      color: #212529;
+      color: #1d1d1f;
       background-color: transparent;
       border: solid transparent;
       border-width: 1px 0
@@ -3315,7 +2914,7 @@
   .btn {
       display: inline-block;
       font-weight: 400;
-      color: #212529;
+      color: #1d1d1f;
       text-align: center;
       vertical-align: middle;
       cursor: pointer;
@@ -3339,7 +2938,7 @@
   }
 
   .btn:hover {
-      color: #212529;
+      color: #1d1d1f;
       text-decoration: none
   }
 
@@ -3361,20 +2960,20 @@
 
   .btn-primary {
       color: #fff;
-      background-color: #007bff;
-      border-color: #007bff
+      background-color: #3c2a96;
+      border-color: #3c2a96
   }
 
   .btn-primary:hover {
       color: #fff;
-      background-color: #0069d9;
-      border-color: #0062cc
+      background-color: #190b60;
+      border-color: #190b60
   }
 
   .btn-primary.focus,
   .btn-primary:focus {
       color: #fff;
-      background-color: #0069d9;
+      background-color: #3c2a96;
       border-color: #0062cc;
       box-shadow: 0 0 0 .2rem rgba(38, 143, 255, .5)
   }
@@ -3524,20 +3123,20 @@
   }
 
   .btn-warning {
-      color: #212529;
+      color: #1d1d1f;
       background-color: #ffc107;
       border-color: #ffc107
   }
 
   .btn-warning:hover {
-      color: #212529;
+      color: #1d1d1f;
       background-color: #e0a800;
       border-color: #d39e00
   }
 
   .btn-warning.focus,
   .btn-warning:focus {
-      color: #212529;
+      color: #1d1d1f;
       background-color: #e0a800;
       border-color: #d39e00;
       box-shadow: 0 0 0 .2rem rgba(222, 170, 12, .5)
@@ -3545,7 +3144,7 @@
 
   .btn-warning.disabled,
   .btn-warning:disabled {
-      color: #212529;
+      color: #1d1d1f;
       background-color: #ffc107;
       border-color: #ffc107
   }
@@ -3553,7 +3152,7 @@
   .btn-warning:not(:disabled):not(.disabled).active,
   .btn-warning:not(:disabled):not(.disabled):active,
   .show>.btn-warning.dropdown-toggle {
-      color: #212529;
+      color: #1d1d1f;
       background-color: #d39e00;
       border-color: #c69500
   }
@@ -3606,20 +3205,20 @@
   }
 
   .btn-light {
-      color: #212529;
+      color: #1d1d1f;
       background-color: #f8f9fa;
       border-color: #f8f9fa
   }
 
   .btn-light:hover {
-      color: #212529;
+      color: #1d1d1f;
       background-color: #e2e6ea;
       border-color: #dae0e5
   }
 
   .btn-light.focus,
   .btn-light:focus {
-      color: #212529;
+      color: #1d1d1f;
       background-color: #e2e6ea;
       border-color: #dae0e5;
       box-shadow: 0 0 0 .2rem rgba(216, 217, 219, .5)
@@ -3627,7 +3226,7 @@
 
   .btn-light.disabled,
   .btn-light:disabled {
-      color: #212529;
+      color: #1d1d1f;
       background-color: #f8f9fa;
       border-color: #f8f9fa
   }
@@ -3635,7 +3234,7 @@
   .btn-light:not(:disabled):not(.disabled).active,
   .btn-light:not(:disabled):not(.disabled):active,
   .show>.btn-light.dropdown-toggle {
-      color: #212529;
+      color: #1d1d1f;
       background-color: #dae0e5;
       border-color: #d3d9df
   }
@@ -3837,7 +3436,7 @@
   }
 
   .btn-outline-warning:hover {
-      color: #212529;
+      color: #1d1d1f;
       background-color: #ffc107;
       border-color: #ffc107
   }
@@ -3856,7 +3455,7 @@
   .btn-outline-warning:not(:disabled):not(.disabled).active,
   .btn-outline-warning:not(:disabled):not(.disabled):active,
   .show>.btn-outline-warning.dropdown-toggle {
-      color: #212529;
+      color: #1d1d1f;
       background-color: #ffc107;
       border-color: #ffc107
   }
@@ -3909,7 +3508,7 @@
   }
 
   .btn-outline-light:hover {
-      color: #212529;
+      color: #1d1d1f;
       background-color: #f8f9fa;
       border-color: #f8f9fa
   }
@@ -3928,7 +3527,7 @@
   .btn-outline-light:not(:disabled):not(.disabled).active,
   .btn-outline-light:not(:disabled):not(.disabled):active,
   .show>.btn-outline-light.dropdown-toggle {
-      color: #212529;
+      color: #1d1d1f;
       background-color: #f8f9fa;
       border-color: #f8f9fa
   }
@@ -4096,7 +3695,7 @@
       min-width: 10rem;
       padding: .5rem 0;
       font-size: 1rem;
-      color: #212529;
+      color: #1d1d1f;
       text-align: left;
       list-style: none;
       background-color: #fff;
@@ -4270,7 +3869,7 @@
       padding: .25rem 1.5rem;
       clear: both;
       font-weight: 400;
-      color: #212529;
+      color: #1d1d1f;
       text-align: inherit;
       white-space: nowrap;
       background-color: transparent;
@@ -4328,7 +3927,7 @@
   .dropdown-item-text {
       display: block;
       padding: .25rem 1.5rem;
-      color: #212529
+      color: #1d1d1f
   }
 
   .btn-group,
@@ -5140,7 +4739,9 @@
   .nav-link {
       display: block;
       padding: .5rem 1rem;
-      text-transform: uppercase
+      font-size: 0.9em;
+      text-transform: uppercase;
+      white-space: nowrap;
   }
 
   .nav-link:focus,
@@ -5255,8 +4856,6 @@
 
   .navbar-brand {
       display: inline-block;
-      padding-top: .3125rem;
-      padding-bottom: .3125rem;
       font-size: 1.25rem;
       line-height: inherit;
       white-space: nowrap
@@ -5289,8 +4888,8 @@
 
   .navbar-text {
       display: inline-block;
-      padding-top: .5rem;
-      padding-bottom: .5rem
+      padding-top: .5 rem;
+      padding-bottom: .5 rem
   }
 
   .navbar-collapse {
@@ -5472,8 +5071,8 @@
       }
 
       .navbar-expand-lg .navbar-nav .nav-link {
-          padding-right: .5rem;
-          padding-left: .5rem
+          padding-right: .6rem;
+          padding-left: .6rem
       }
 
       .navbar-expand-lg>.container,
@@ -5783,7 +5382,7 @@
   }
 
   .card-footer {
-      padding: .75rem 1.25rem;
+      padding: 0.5rem 1.25rem;
       background-color: rgba(0, 0, 0, .03);
       border-top: 1px solid rgba(0, 0, 0, .125)
   }
@@ -6186,13 +5785,13 @@
   }
 
   .badge-warning {
-      color: #212529;
+      color: #1d1d1f;
       background-color: #ffc107
   }
 
   a.badge-warning:focus,
   a.badge-warning:hover {
-      color: #212529;
+      color: #1d1d1f;
       background-color: #d39e00
   }
 
@@ -6220,13 +5819,13 @@
   }
 
   .badge-light {
-      color: #212529;
+      color: #1d1d1f;
       background-color: #f8f9fa
   }
 
   a.badge-light:focus,
   a.badge-light:hover {
-      color: #212529;
+      color: #1d1d1f;
       background-color: #dae0e5
   }
 
@@ -6516,7 +6115,7 @@
   }
 
   .list-group-item-action:active {
-      color: #212529;
+      color: #1d1d1f;
       background-color: #e9ecef
   }
 
@@ -7477,7 +7076,7 @@
 
   .popover-body {
       padding: .5rem .75rem;
-      color: #212529
+      color: #1d1d1f
   }
 
   .carousel {
@@ -11747,7 +11346,7 @@
   }
 
   .text-body {
-      color: #212529
+      color: #1d1d1f
   }
 
   .text-muted {
@@ -11888,9 +11487,684 @@
           color: inherit;
           border-color: #dee2e6
       }
-  }
+    }
     /* Fin de Bootstrap */
+
     
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* General: alineaciones */
+    main > .container {
+        padding-top: 50px;
+    }
+
+    .una-linea {
+        white-space: nowrap;
+    }
+    /* Fin de General: alineaciones */
+
+    /* General: enlaces */
+    a[target="_blank"]::after {
+        font-family: "Font Awesome 5 Free";
+        content: "\f35d";
+        font-size: 13px;
+        vertical-align: middle;
+
+        margin-left: 10px;
+    }
+    /* Fin de General: enlaces */
+
+    /* General: títulos */
+    h2 {
+        margin-bottom: 30px;
+        border-bottom: 1px solid #3c2a96;
+        padding-bottom: 8px;
+
+        text-align: center;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #3c2a96;
+    }
+
+    .titulo-h2-con-enlace {
+        margin-bottom: 30px;
+        border-bottom: 1px solid #3c2a96;
+        padding-bottom: 8px;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .titulo-h2-con-enlace h2 {
+        margin-bottom: 0;
+        padding: 0;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #3c2a96;
+        border: none;
+    }
+
+    .titulo-h2-con-enlace a {
+        position: absolute;
+        right: 16px;
+        color: #3c2a96;
+    }
+
+    h3.titulo-portfolio-item {
+        padding-top: 10px;
+        margin-bottom: 10px;
+        color: #fff;
+        font-weight: bold;
+        text-align: center;
+    }
+    /* Fin de General: títulos */
+
+    /* General: Carruseles con lightbox e image caption. */
+    amp-carousel amp-img {
+        cursor: zoom-in;
+    }
+
+    .amp-carousel-button-prev,
+    .amp-carousel-button-next {
+        cursor: pointer;
+    }
+    /* Fin de General: Carruseles con lightbox e image caption. */
+
+    /* Barra superior: Breadcrumbs, teléfono, emails y ubicación */
+    #barra-superior--breadcrumbs {
+        min-width: 145px;
+        font-size: 13px;
+    }
+
+    #barra-superior--telefono-emails-ubicacion {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    #barra-superior--breadcrumbs-telefono-emails-ubicacion {
+        margin-bottom: 10px;
+        border-bottom: 1px solid #3c2a9638;
+        padding: 0 0 1px 0;
+    }
+
+    #barra-superior--breadcrumbs-telefono-emails-ubicacion #estas-aqui {
+        font-weight: bold;
+        margin-right: 10px
+    }
+
+    #barra-superior--breadcrumbs-telefono-emails-ubicacion .fa-chevron-right {
+        margin: 0 5px;
+    }
+
+    #barra-superior--breadcrumbs-telefono-emails-ubicacion #pagina-actual {
+        font-weight: bold;
+        color: #3c2a96;
+    }
+
+    .barra-superior--contacto {
+        max-width: 100%;
+
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+
+        text-align: center;
+        color: #3c2a98;
+    }
+
+    .barra-superior--contacto > div {
+        margin-right: 10px;
+        margin-left: 10px;
+        font-size: 13px;
+    }
+
+    .barra-superior--contacto div:not(.nombre) {
+        white-space: nowrap;
+    }
+
+    .barra-superior--contacto .nombre {
+        margin-right: 10px;
+        margin-bottom: 10px;
+        font-weight: bold;
+        white-space: nowrap;
+    }
+
+    .barra-superior--contacto a {
+        color: #3c2a98;
+        text-decoration: none;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .barra-superior--contacto a:hover {
+        color: #3c2a98;
+        text-decoration: underline;
+    }
+
+    .barra-superior--contacto .fa, .barra-superior--contacto .fas, .barra-superior--contacto .far, .barra-superior--contacto .fal, .barra-superior--contacto .fa {
+        color: #3c2a98;
+        margin-right: 6px;
+    }
+    /* Fin de Barra superior: Breadcrumbs, teléfono, emails y ubicación */
+
+    /* Navbar */
+    .navbar-sticky {
+        position: sticky;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 9999;
+    }
+
+    #nav-item--naves-industriales:hover #nav-item--dropdown-menu--naves-industriales {
+      display: block;
+    }
+    /* Fin de Navbar */
+
+    /* Sidebar */
+    #sidebar1-navbar-toggler-container {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .navbar .navbar-toggler {
+        margin-top: 8px;
+    }
+
+    #sidebar1 .navbar-toggler {
+        margin: 16px 16px 0 0;
+    }
+
+    .mobile-nav {
+      text-align: right;
+    }
+
+    #sidebar1 ul {
+        padding-inline-start: 15px;
+        border-left: 1px solid #80808029;
+    }
+
+    #sidebar1 header {
+        border: none;
+        color: #1d1d1f
+    }
+
+    #sidebar1 a {
+        color: #1d1d1f
+    }
+
+    #sidebar1 a {
+        color: #1d1d1f
+    }
+
+    #sidebar1 amp-accordion li {
+        margin-left: 0;
+        padding-left: 0
+    }
+
+    #sidebar1 amp-accordion li a {
+        letter-spacing: normal
+    }
+
+    #sidebar1 header {
+        outline: none
+    }
+
+    .inner-nav ul:not(.dropdown-items) > li {
+        min-height: 50px
+    }
+
+    .inner-nav {
+      display: inline-block;
+      position: relative;
+      float: right
+    }
+
+    .inner-nav ul {
+      margin-right: 20px;
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      text-align: center;
+      line-height: 1.3
+    }
+
+    .inner-nav ul li {
+      position: relative
+    }
+
+    .inner-nav ul li {
+      position: relative
+    }
+
+    .dropdown-items {
+      padding-inline-start: 0;
+    }
+
+    .dropdown-items > li > a {
+      line-height: 57px;
+    }
+
+    .inner-nav ul li a {
+      color: #777;
+      letter-spacing: 2px;
+      display: inline-block;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      text-decoration: none;
+      -webkit-transition: all .27s cubic-bezier(0, 0, .58, 1);
+      -o-transition: all .27s cubic-bezier(0, 0, .58, 1);
+      transition: all .27s cubic-bezier(0, 0, .58, 1)
+    }
+
+    .inner-nav ul li a.active,
+    .inner-nav ul li a:hover {
+      color: #0081c6;
+      text-decoration: none
+    }
+
+    .inner-nav ul li .mn-sub li a {
+      display: block;
+      width: 100%;
+      height: auto;
+      line-height: 1.3;
+      position: relative;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 11px 15px;
+      font-size: 13px;
+      text-align: left;
+      text-transform: none;
+      border-left: none;
+      border-right: none;
+      letter-spacing: 0;
+      color: #b0b0b0;
+      cursor: pointer
+    }
+
+    .inner-nav ul li .mn-sub li a:hover,
+    .mn-sub li a.active,
+    .mn-sub li a:hover {
+      background: rgba(255, 255, 255, .09);
+      color: #f5f5f5
+    }
+
+    .inner-nav li .mn-sub.to-left,
+    .inner-nav>ul>li:last-child .mn-sub {
+      left: auto;
+      right: 0
+    }
+
+    .inner-nav li .mn-sub li ul.to-left,
+    .inner-nav li:last-child .mn-sub li ul {
+      left: auto;
+      right: 100%;
+      top: 0;
+      border-left: none;
+      border-right: 1px solid rgba(255, 255, 255, .07)
+    }
+
+    .mobile-on .inner-nav li:last-child .mn-sub li ul {
+      left: auto;
+      right: auto;
+      top: 0
+    }
+        
+    .inner-nav ul li .mn-sub li a:hover,
+    .mn-sub li a.active,
+    .mn-sub li a:hover {
+      background: rgba(255, 255, 255, .09);
+      color: #f5f5f5
+    }
+
+    .inner-nav li .mn-sub.to-left,
+    .inner-nav>ul>li:last-child .mn-sub {
+      left: auto;
+      right: 0
+    }
+
+    .inner-nav li .mn-sub li ul.to-left,
+    .inner-nav li:last-child .mn-sub li ul {
+      left: auto;
+      right: 100%;
+      top: 0;
+      border-left: none;
+      border-right: 1px solid rgba(255, 255, 255, .07)
+    }
+
+    .mobile-on .inner-nav li:last-child .mn-sub li ul {
+      left: auto;
+      right: auto;
+      top: 0
+    }
+
+    .clearlist, .clearlist li {
+      list-style: none;
+      margin: 0;
+      background: 0 0;
+    }
+    .movil-nav ul li {
+      float: none;
+      text-align: left;
+    }
+    .inner-nav ul li {
+      float: left;
+      margin-left: 20px;
+      position: relative;
+    }
+    #sidebar1 ul.clearlist {
+        min-width: 260px;
+    }
+    .inner-nav ul {
+        margin-right: 20px;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 1.3;
+    }
+    /* Fin de navbar */
+
+    /* Página de inicio: Welcome Blurb */
+    #welcome-blurb {
+        background-image: url(images/inicio/cumonor-cubiertas-y-montajes-norte-s.l.--tejado.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-y: center;
+
+        box-shadow: inset 0 0 0px 5000px #0000004d;
+    }
+
+    #welcome-blurb .col-12{
+        min-height: 40vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    #welcome-blurb amp-img {
+        max-width: 800px;
+    }
+
+    #welcome-blurb h1 {
+        margin: 0;
+        color: white;
+        font-size: 3.9rem;
+        text-align: center;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-shadow: 0 0 5px black;
+    }
+
+    #welcome-blurb p {
+        margin: 0;
+        font-size: 2.2rem;
+        color: white;
+        letter-spacing: 2px;
+        text-shadow: 0 0 5px black;
+    }
+
+    #welcome-blurb .destacar {
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    /* Fin de Página de inicio: Welcome blurb */
+
+    /* Página de inicio: ¿Por qué Cumonor? */
+    #por-que-cumonor {
+        padding-bottom: 50px;
+    }
+
+    #por-que-cumonor #ventajas {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    #por-que-cumonor .ventaja {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    
+    #por-que-cumonor .ventaja p {
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 1.23536;
+        letter-spacing: -.022em;
+        color: #888;
+    }
+    
+    #por-que-cumonor .ventaja.numero p:first-child {
+        margin-bottom: 0;
+    }
+    
+    #por-que-cumonor .ventaja.texto p:first-child {
+        margin-bottom: 3px;
+    }
+    
+    #por-que-cumonor .ventaja.numero h3 {
+        font-size: 80px;
+        font-weight: 700;
+        line-height: 1;
+        letter-spacing: -.015em;
+        color: #3c2a96;
+    }
+    
+    #por-que-cumonor .ventaja.texto h3 {
+        font-size: 35px;
+        font-weight: 700;
+        line-height: 1.1;
+        letter-spacing: -.015em;
+        margin-bottom: 16px;
+        color: #3c2a96;
+    }
+
+    #por-que-cumonor .ventaja .subtitulo {
+        font-size: 19px;
+        font-weight: 700;
+        letter-spacing: 0;
+        color: #3c2a96;
+    }
+    /* Página de inicio: ¿Por qué Cumonor? */
+
+    /* Página de inicio: Todos nuestros servicios */
+    #todos-nuestros-servicios {
+        padding: 50px 0;
+    }
+    
+    #todos-nuestros-servicios .servicio {
+        margin: auto;
+        width: fit-content;
+        transition: all .2s ease-in-out;
+    }
+
+    #todos-nuestros-servicios .servicio:hover {
+        transform: scale(1.015);
+    }
+
+    #todos-nuestros-servicios .servicio > a {
+        position: relative;
+    }
+
+    #todos-nuestros-servicios .servicio > a > div {
+        position: absolute;
+        bottom: 3px;
+        left: 0;
+        width: 100%;
+        min-height: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: inset 0 0 40px 100px #ffffff85;
+        border-top-right-radius: 15%;
+        border-top-left-radius: 15%;
+    }
+
+    #todos-nuestros-servicios h3 {
+        color: #3c2a96;
+        font-weight: bold;
+        text-align: center;
+    }
+    /* Fin de Página de inicio: Todos nuestros servicios */
+    
+    /* Página de inicio: Portfolio */
+    #proyectos-realizados {
+        padding: 50px 0;
+    }
+
+    .portfolio-item {
+        background: #3c2a96;
+    }
+
+    .portfolio-item amp-selector amp-img:not([selected]) {
+        filter: grayscale(1);
+    }
+    /* Fin de Página de inicio: Portfolio */
+
+    /* Footer: Sticky footer */
+    html {
+      min-height: 100%;
+      height: 100%;
+    }
+
+    body {
+      min-height: 100vh;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    main {
+      /* flex: 1; would be enough but IE has different defaults (surprise!) */
+      flex: 1 0 auto;
+    }
+    /* Fin de Footer: Sticky footer */
+
+
+    /* Footer: general */
+    footer {
+        margin-top: 50px;
+        border-top: 1px solid #3c2a9696;
+        padding: 50px 0;
+    }
+
+    footer h5 {
+        margin-bottom: 15px;
+        border-bottom: 1px solid #3c2a9630;
+        padding-bottom: 10px;
+        font-size: 12px;
+        font-weight: bold;
+        color: #3c2a96;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    footer h6 {
+        font-size: 12px;
+        font-weight: bold;
+        color: #3c2a96;
+    }
+
+    footer p {
+        margin-bottom: 0;
+    }
+
+    footer a {
+        font-size: 12px;
+        color: #3c2a96;
+    }
+
+    footer a:hover {
+        color: #3c2a96;
+    }
+    /* Footer: general */
+
+
+    /* Footer: Contacto (tercera columna) */
+    .footer-contacto {
+        max-width: 100%;
+
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+
+        text-align: center;
+        font-size: 12px;
+        color: #3c2a98;
+    }
+
+    .footer-contacto > div {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .footer-contacto div:not(.nombre) {
+        white-space: nowrap;
+        margin-bottom: 30px;
+    }
+
+    .footer-contacto .nombre {
+        margin-right: 10px;
+        margin-bottom: 10px;
+        font-weight: bold;
+        white-space: nowrap;
+    }
+
+    .footer-contacto a {
+        color: #3c2a98;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .footer-contacto a:hover {
+        color: #3c2a98;
+        text-decoration: underline;
+    }
+
+    .footer-contacto .fa, .footer-contacto .fas, .footer-contacto .far, .footer-contacto .fal, .footer-contacto .fa {
+        color: #3c2a98;
+        margin-right: 6px;
+    }
+    /* Fin de Footer: Contacto (tercera columna) */
+
   </style>
 
   <!-- CSS de AMP para cargar las páginas, incluyendo la animación inicial -->
@@ -11906,11 +12180,339 @@
 
 
 
-<main class="py-md-3" role="main">
-  <div class="container">
+<main role="main"> <!-- class="py-md-3" -->
 
-    <h1>Hello World</h1>
-    
+    <div id="welcome-blurb">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+
+                    <h1>¡Bienvenido a Cumonor!</h1>
+
+                    <p class="text-center"><span class="destacar">diseño</span>, <span class="destacar">fabricación</span> y <span class="destacar">montaje</span> <br>de <span class="destacar">estructuras</span> y <span class="destacar">cerramientos metálicos</span>.</p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div id="por-que-cumonor" class="row">
+            <div class="col-12">
+
+                <h2>¿Por qué Cumonor?</h2>
+
+                <div id="ventajas">
+
+                    <div class="ventaja numero">
+                        <p>Más de</p>
+                        <h3 style='margin-left: -8px;'>110</h3>
+                        <p class="subtitulo">Proyectos realizados</p>
+                        <p>Para IKEA, Coca-Cola, Pascual, Siro, Gullón y muchos otros.</p>
+                    </div>
+
+                    <div class="ventaja numero">
+                        <p>Más de</p>
+                        <h3 style='margin-left: -4px;'>30</h3>
+                        <p class="subtitulo">Años de experiencia</p>
+                        <p>Nacidos de la fusión de Montajes JuanFran S.L. y XXXXX.</p>
+                    </div>
+
+                    <div class="ventaja texto">
+                        <p>Contamos con</p>
+                        <h3>Maquinaria propia</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+
+                    <div class="ventaja texto">
+                        <p>Y con un</p>
+                        <h3>Equipo profesional</h3>
+                        <p>Altamente cualificado.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="todos-nuestros-servicios" class="row">
+            <div class="col-12">
+
+                <h2>Todos nuestros servicios</h2>
+
+                <div class="row">
+                    <div class="col-12 col-md-4">
+
+                        <div class="servicio">
+                            <a href="estructuras-metalicas.php">
+                                <amp-img src="images/_borrar_placeholder.jpg"
+                                    width="600"
+                                    height="410"
+                                    layout="intrinsic"
+                                    alt="Estructuras Metálicas">
+                                </amp-img>
+                                <div>
+                                    <h3>Estructuras Metálicas</h3>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-md-4">
+
+                        <div class="servicio">
+                            <a href="cubiertas.php">
+                                <amp-img src="images/_borrar_placeholder.jpg"
+                                    width="600"
+                                    height="410"
+                                    layout="intrinsic"
+                                    alt="Cubiertas">
+                                </amp-img>
+                                <div>
+                                    <h3>Cubiertas</h3>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-md-4">
+
+                        <div class="servicio">
+                            <a href="reformas.php">
+                                <amp-img src="images/_borrar_placeholder.jpg"
+                                    width="600"
+                                    height="410"
+                                    layout="intrinsic"
+                                    alt="Reformas">
+                                </amp-img>
+                                <div>
+                                    <h3>Reformas</h3>
+                                </div>
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="row" style='margin-top: 30px;'>
+                    <div class="col-12 col-md-4">
+
+                        <div class="servicio">
+                            <a href="reparaciones.php">
+                                <amp-img src="images/_borrar_placeholder.jpg"
+                                    width="600"
+                                    height="410"
+                                    layout="intrinsic"
+                                    alt="Reparaciones">
+                                </amp-img>
+                                <div>
+                                    <h3>Reparaciones</h3>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-md-4">
+
+                        <div class="servicio">
+                            <a href="limpieza-y-mantenimiento-de-naves-industriales.php">
+                                <amp-img src="images/_borrar_placeholder.jpg"
+                                    width="600"
+                                    height="410"
+                                    layout="intrinsic"
+                                    alt="Limpieza y Mantenimiento de Naves Industriales">
+                                </amp-img>
+                                <div>
+                                    <h3>Limpieza y Mantenimiento <br>de Naves Industriales</h3>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-md-4">
+
+                        <div class="servicio">
+                            <a href="naves-agricolas.php">
+                                <amp-img src="images/_borrar_placeholder.jpg"
+                                    width="600"
+                                    height="410"
+                                    layout="intrinsic"
+                                    alt="Naves Agrícolas">
+                                </amp-img>
+                                <div>
+                                    <h3>Naves Agrícolas</h3>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row" style='margin-top: 30px;'>
+                    <div class="col-12 col-md-4">
+
+                        <div class="servicio">
+                            <a href="limpieza-y-mantenimiento-de-viviendas.php">
+                                <amp-img src="images/_borrar_placeholder.jpg"
+                                    width="600"
+                                    height="410"
+                                    layout="intrinsic"
+                                    alt="Limpieza y Mantenimiento de Viviendas">
+                                </amp-img>
+                                <div>
+                                    <h3>Limpieza y Mantenimiento <br>de Viviendas</h3>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-md-4">
+
+                        <div class="servicio">
+                            <a href="taller-de-reparacion-de-maquinaria-agricola.php">
+                                <amp-img src="images/inicio/todos-nuestros-servicios/taller-de-reparacion-de-maquinaria-agricola.jpg"
+                                    width="600"
+                                    height="410"
+                                    layout="intrinsic"
+                                    alt="Taller de reparación de maquinaria agrícola">
+                                </amp-img>
+                                <div>
+                                    <h3>Taller de reparación <br>de maquinaria agrícola</h3>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="proyectos-realizados" class="row">
+            <div class="col-12">
+
+                <div class="titulo-h2-con-enlace">
+                    <h2>Portfolio</h2>
+                    <a href="portfolio.php">Ver todo</a>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-md-6">
+
+                        <div class="portfolio-item">
+                            <h3 class="titulo-portfolio-item">IKEA (Valladolid)</h3>
+
+                            <amp-state id="carousel1">
+                                <script type="application/json">
+                                    {
+                                        "selectedSlide": 0
+                                    }
+                                </script>
+                            </amp-state>
+
+                            <amp-carousel on="slideChange:AMP.setState({carousel1: {selectedSlide:event.index}})"
+                                [slide]="carousel1.selectedSlide" lightbox id="imageSlides1" layout="intrinsic"
+                                width="1600" height="1200" type="slides" loop>
+                                <div class="slide">
+                                    <amp-img src="images/portfolio/proyecto-1--ikea/ikea-01.jpg"
+                                        width="1600" height="1200" layout="intrinsic"></amp-img>
+                                </div>
+                                <div class="slide">
+                                    <amp-img src="images/portfolio/proyecto-1--ikea/ikea-02.jpg"
+                                        width="1600" height="1200" layout="intrinsic"></amp-img>
+                                </div>
+                                <div class="slide">
+                                    <amp-img src="images/portfolio/proyecto-1--ikea/ikea-03.jpg"
+                                        width="1600" height="1200" layout="intrinsic"></amp-img>
+                                </div>
+                                <div class="slide">
+                                    <amp-img src="images/portfolio/proyecto-1--ikea/ikea-04.jpg"
+                                        width="1600" height="1200" layout="intrinsic"></amp-img>
+                                </div>
+                                <div class="slide">
+                                    <amp-img src="images/portfolio/proyecto-1--ikea/ikea-05.jpg"
+                                        width="1600" height="1200" layout="intrinsic"></amp-img>
+                                </div>
+                            </amp-carousel>
+
+                            <amp-selector id="ampSelector" [selected]="carousel1.selectedSlide"
+                                on="select:AMP.setState({carousel1: {selectedSlide:event.targetOption}})">
+                                <amp-carousel layout="intrinsic" width="1600" height="72" class="thumbnail-carousel">
+                                    <amp-img src="images/portfolio/proyecto-1--ikea/ikea-01.jpg" selected
+                                        option="0" role="button" tabindex="1" width="96" height="72" layout="fixed"></amp-img>
+                                    <amp-img src="images/portfolio/proyecto-1--ikea/ikea-02.jpg"
+                                        option="1" role="button" tabindex="1"  width="96" height="72" layout="fixed"></amp-img>
+                                    <amp-img src="images/portfolio/proyecto-1--ikea/ikea-03.jpg"
+                                        option="2" role="button" tabindex="1" width="96" height="72" layout="fixed"></amp-img>
+                                    <amp-img src="images/portfolio/proyecto-1--ikea/ikea-04.jpg"
+                                        option="3" role="button" tabindex="1" width="96" height="72" layout="fixed"></amp-img>
+                                    <amp-img src="images/portfolio/proyecto-1--ikea/ikea-05.jpg"
+                                        option="4" role="button" tabindex="1" width="96" height="72" layout="fixed"></amp-img>
+                                </amp-carousel>
+                            </amp-selector>
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-md-6">
+
+                        <div class="portfolio-item">
+                            <h3 class="titulo-portfolio-item">Centro logístico Coca-Cola (Badajoz)</h3>
+                            
+                            <amp-state id="carousel2">
+                                <script type="application/json">
+                                    {
+                                        "selectedSlide": 0
+                                    }
+                                </script>
+                            </amp-state>
+
+                            <amp-carousel on="slideChange:AMP.setState({carousel2: {selectedSlide:event.index}})"
+                                [slide]="carousel2.selectedSlide" lightbox id="imageSlides2" layout="intrinsic"
+                                width="1600" height="1200" type="slides" loop>
+                                <div class="slide">
+                                    <amp-img src="images/portfolio/proyecto-2--coca-cola/coca-cola-01.jpg"
+                                        width="1600" height="1200" layout="intrinsic"></amp-img>
+                                </div>
+                                <div class="slide">
+                                    <amp-img src="images/portfolio/proyecto-2--coca-cola/coca-cola-02.jpg"
+                                        width="1600" height="1200" layout="intrinsic"></amp-img>
+                                </div>
+                                <div class="slide">
+                                    <amp-img src="images/portfolio/proyecto-2--coca-cola/coca-cola-03.jpg"
+                                        width="1600" height="1200" layout="intrinsic"></amp-img>
+                                </div>
+                                <div class="slide">
+                                    <amp-img src="images/portfolio/proyecto-2--coca-cola/coca-cola-04.jpg"
+                                        width="1600" height="1200" layout="intrinsic"></amp-img>
+                                </div>
+                                <div class="slide">
+                                    <amp-img src="images/portfolio/proyecto-2--coca-cola/coca-cola-05.jpg"
+                                        width="1600" height="1200" layout="intrinsic"></amp-img>
+                                </div>
+                            </amp-carousel>
+
+                            <amp-selector id="ampSelector" [selected]="carousel2.selectedSlide"
+                                on="select:AMP.setState({carousel2: {selectedSlide:event.targetOption}})">
+                                <amp-carousel layout="intrinsic" width="1600" height="72" class="thumbnail-carousel">
+                                    <amp-img src="images/portfolio/proyecto-2--coca-cola/coca-cola-01.jpg" selected
+                                        option="0" role="button" tabindex="1" width="96" height="72" layout="fixed"></amp-img>
+                                    <amp-img src="images/portfolio/proyecto-2--coca-cola/coca-cola-02.jpg"
+                                        option="1" role="button" tabindex="1"  width="96" height="72" layout="fixed"></amp-img>
+                                    <amp-img src="images/portfolio/proyecto-2--coca-cola/coca-cola-03.jpg"
+                                        option="2" role="button" tabindex="1" width="96" height="72" layout="fixed"></amp-img>
+                                    <amp-img src="images/portfolio/proyecto-2--coca-cola/coca-cola-04.jpg"
+                                        option="3" role="button" tabindex="1" width="96" height="72" layout="fixed"></amp-img>
+                                    <amp-img src="images/portfolio/proyecto-2--coca-cola/coca-cola-05.jpg"
+                                        option="4" role="button" tabindex="1" width="96" height="72" layout="fixed"></amp-img>
+                                </amp-carousel>
+                            </amp-selector>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
 
   </div>
 </main>

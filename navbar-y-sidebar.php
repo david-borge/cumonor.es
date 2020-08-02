@@ -86,13 +86,22 @@
                             <span id="pagina-actual">Limpieza y Mantenimiento</span>';
             break;
         
+        
+        case 'taller-de-reparacion-de-maquinaria-agricola.php':
+            $breadcrumbs = '<i class="fas fa-chevron-circle-right"></i>
+                            <span id="estas-aqui">Estás aquí: </span>
+                            <span>Inicio</span>
+                            <i class="fas fa-chevron-right"></i>
+                            <span id="pagina-actual">Taller de reparación de maquinaria agrícola</span>';
+            break;
+        
         default:
             $breadcrumbs = "";
             break;
     }
 ?>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-sticky">
 
   <div id="barra-superior--breadcrumbs-telefono-emails-ubicacion" class="container">
 
@@ -121,7 +130,7 @@
 
         <div class="barra-superior--contacto">
             <a href="https://goo.gl/maps/uRWNK61esC7uNdWPA" target="_blank" title="Carretera Nacional 620, P.K. 76'4, Magaz de Pisuerga, Palencia">
-                <span class="una-linea"><i class="fas fa-map-marker-alt" style='margin-top: 3px;'></i>Ir a la ubicación en Google Maps</span>
+                <span class="una-linea"><i class="fas fa-map-marker-alt" style='margin-top: 3px;'></i>Ver en Google Maps</span>
             </a>
         </div>
     </div>
@@ -132,8 +141,8 @@
 
       <a class="navbar-brand" href="index.php">
         <!-- Hero image (preloaded) -->
-        <!-- Nota: debe tener el mismo enlace que <link rel="preload" href="/images/cumonor-cubiertas-y-montajes-norte-s.l.-logo.jpg" as="image"> -->
-        <amp-img src="images/cumonor-cubiertas-y-montajes-norte-s.l.-logo-con-texto.png"
+        <!-- Nota: debe tener el mismo enlace que <link rel="preload" href="images/cumonor-cubiertas-y-montajes-norte-s.l.--logo-con-texto-en-una-linea.png" as="image"> -->
+        <amp-img src="images/cumonor-cubiertas-y-montajes-norte-s.l.--logo-con-texto-en-una-linea.png"
             width="271" 
             height="150"
             layout="intrinsic" 
@@ -154,17 +163,30 @@
 
             <li id="nav-item--naves-industriales" class="nav-item dropdown">
 
-                <a class="nav-link dropdown-toggle <?= ( ( $nombre_del_archivo_de_la_pagina_actual == "estructuras-metalicas.php" || $nombre_del_archivo_de_la_pagina_actual == "cubiertas.php" || $nombre_del_archivo_de_la_pagina_actual == "reformas.php" || $nombre_del_archivo_de_la_pagina_actual == "reparaciones.php" || $nombre_del_archivo_de_la_pagina_actual == "limpieza-y-mantenimiento-de-naves-industriales.php" || $nombre_del_archivo_de_la_pagina_actual == "naves-agricolas.php" ) ? 'active' : '' ); ?>">Naves industriales</a>
+                <a class="nav-link dropdown-toggle 
+                    <?= ( ( $nombre_del_archivo_de_la_pagina_actual == "estructuras-metalicas.php" || 
+                            $nombre_del_archivo_de_la_pagina_actual == "cubiertas.php" || 
+                            $nombre_del_archivo_de_la_pagina_actual == "reformas.php" || 
+                            $nombre_del_archivo_de_la_pagina_actual == "reparaciones.php" || 
+                            $nombre_del_archivo_de_la_pagina_actual == "limpieza-y-mantenimiento-de-naves-industriales.php" || 
+                            $nombre_del_archivo_de_la_pagina_actual == "naves-agricolas.php" ) ? 'active' : '' );
+                    ?>"
+                >Naves industriales</a>
                 
                 <div id="nav-item--dropdown-menu--naves-industriales" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <!-- <h6 class="dropdown-header">Naves Industriales</h6> -->
                     <a class="dropdown-item <?= ( ( $nombre_del_archivo_de_la_pagina_actual == "estructuras-metalicas.php" ) ? 'active' : '' ); ?>" href="estructuras-metalicas.php">Estructuras Metálicas</a>
                     <a class="dropdown-item <?= ( ( $nombre_del_archivo_de_la_pagina_actual == "cubiertas.php" ) ? 'active' : '' ); ?>" href="cubiertas.php">Cubiertas</a>
                     <a class="dropdown-item <?= ( ( $nombre_del_archivo_de_la_pagina_actual == "reformas.php" ) ? 'active' : '' ); ?>" href="reformas.php">Reformas</a>
                     <a class="dropdown-item <?= ( ( $nombre_del_archivo_de_la_pagina_actual == "reparaciones.php" ) ? 'active' : '' ); ?>" href="reparaciones.php">Reparaciones</a>
                     <a class="dropdown-item <?= ( ( $nombre_del_archivo_de_la_pagina_actual == "limpieza-y-mantenimiento-de-naves-industriales.php" ) ? 'active' : '' ); ?>" href="limpieza-y-mantenimiento-de-naves-industriales.php">Limpieza y Mantenimiento</a>
-                    <a class="dropdown-item <?= ( ( $nombre_del_archivo_de_la_pagina_actual == "naves-agricolas.php" ) ? 'active' : '' ); ?>" href="naves-agricolas.php">Naves Agrícolas</a>
                 </div>
 
+            </li>
+
+            
+            <li class="nav-item">
+                <a class="nav-link <?= ( ( $nombre_del_archivo_de_la_pagina_actual == "naves-agricolas.php" ) ? 'active' : '' ); ?>" href="naves-agricolas.php">Naves Agrícolas</a>
             </li>
 
             <li id="nav-item--naves-industriales" class="nav-item dropdown">
@@ -178,7 +200,11 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link <?= ( ( $nombre_del_archivo_de_la_pagina_actual == "quienes-somos.php" ) ? 'active' : '' ); ?>" href="quienes-somos.php">Quienes somos</a>
+                <a class="nav-link <?= ( ( $nombre_del_archivo_de_la_pagina_actual == "taller-de-reparacion-de-maquinaria-agricola.php" ) ? 'active' : '' ); ?>" href="taller-de-reparacion-de-maquinaria-agricola.php" title="Taller de reparación de maquinaria agrícola">Taller</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link <?= ( ( $nombre_del_archivo_de_la_pagina_actual == "portfolio.php" ) ? 'active' : '' ); ?>" href="portfolio.php">Portfolio</a>
             </li>
 
             <li class="nav-item">
@@ -229,13 +255,12 @@
                             <li class="dropdown-item">
                                 <a href="limpieza-y-mantenimiento-de-naves-industriales.php">Limpieza y Mantenimiento</a>
                             </li>
-                            <li class="dropdown-item">
-                                <a href="naves-agricolas.php">Naves Agrícolas</a>
-                            </li>
                         </ul>
                     </section>
                 </amp-accordion>
             </li>
+
+            <li><a href="naves-agricolas.php">Naves Agrícolas</a></li>
 
             <li class="nav-dropdown">
                 <amp-accordion layout="container" animate disable-session-states class="dropdown">
@@ -250,7 +275,9 @@
                 </amp-accordion>
             </li>
 
-            <li><a href="quienes-somos.php">Quienes Somos</a></li>
+            <li><a href="taller-de-reparacion-de-maquinaria-agricola.php">Taller</a></li>
+
+            <li><a href="portfolio.php">Portfolio</a></li>
 
             <li><a href="contacto.php">Contacto</a></li>
 

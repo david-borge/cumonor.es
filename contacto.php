@@ -2,7 +2,7 @@
 
 
   <!-- Título de esta página -->
-  <title>Estructuras metálicas | Cumonor - Cubiertas y Montajes Norte s.l.</title>
+  <title>Contacto | Cumonor - Cubiertas y Montajes Norte s.l.</title>
 
   <!-- Description -->
   <meta name="description" content="Cumonor - Cubiertas y Montajes Norte s.l.">
@@ -11878,109 +11878,62 @@
     }
     /* Fin de Página de inicio: Welcome blurb */
 
-    /* Página de inicio: ¿Por qué Cumonor? */
-    #por-que-cumonor {
-        padding: 50px 0;
-    }
+    /* Página de Contacto: Información de contacto */
+    .info-contacto {
+        max-width: 100%;
 
-    #por-que-cumonor #ventajas {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-    
-    #por-que-cumonor .ventaja {
-        padding-right: 15px;
-        padding-left: 15px;
-    }
-    
-    #por-que-cumonor .ventaja p {
-        font-size: 17px;
-        font-weight: 500;
-        line-height: 1.23536;
-        letter-spacing: -.022em;
-        color: #888;
-    }
-    
-    #por-que-cumonor .ventaja.numero p:first-child {
-        margin-bottom: 0;
-    }
-    
-    #por-que-cumonor .ventaja.texto p:first-child {
-        margin-bottom: 3px;
-    }
-    
-    #por-que-cumonor .ventaja .subtitulo {
-        color: #1d1d1f;
-        font-weight: 700;
-    }
-    
-    #por-que-cumonor .ventaja.numero h3 {
-        font-size: 80px;
-        font-weight: 700;
-        line-height: 1;
-        letter-spacing: -.015em;
-    }
-    
-    #por-que-cumonor .ventaja.texto h3 {
-        font-size: 35px;
-        font-weight: 700;
-        line-height: 1.1;
-        letter-spacing: -.015em;
-        margin-bottom: 16px;
-    }
-    /* Página de inicio: ¿Por qué Cumonor? */
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
 
-    /* Página de inicio: Todos nuestros servicios */
-    #todos-nuestros-servicios {
-        padding: 50px 0;
-    }
-    
-    #todos-nuestros-servicios .servicio {
-        margin: auto;
-        width: fit-content;
-        transition: all .2s ease-in-out;
+        text-align: center;
+        color: #3c2a98;
     }
 
-    #todos-nuestros-servicios .servicio:hover {
-        transform: scale(1.015);
+    .info-contacto > div {
+        margin-right: 10px;
+        margin-left: 10px;
     }
 
-    #todos-nuestros-servicios .servicio > a {
-        position: relative;
+    .info-contacto div:not(.nombre) {
+        white-space: nowrap;
+        margin-bottom: 30px;
     }
 
-    #todos-nuestros-servicios .servicio > a > div {
-        position: absolute;
-        bottom: 3px;
-        left: 0;
-        width: 100%;
-        min-height: 60px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        box-shadow: inset 0 0 40px 100px #ffffff85;
-        border-top-right-radius: 15%;
-        border-top-left-radius: 15%;
-    }
-
-    #todos-nuestros-servicios h3 {
-        color: #3c2a96;
+    .info-contacto .nombre {
+        margin-right: 10px;
+        margin-bottom: 10px;
         font-weight: bold;
+        white-space: nowrap;
+    }
+
+    .info-contacto a {
+        color: #3c2a98;
+        text-decoration: none;
         text-align: center;
     }
-    /* Fin de Página de inicio: Todos nuestros servicios */
-    
-    /* Página de inicio: Portfolio */
-    #proyectos-realizados {
-        padding: 50px 0;
+
+    .info-contacto a:hover {
+        color: #3c2a98;
+        text-decoration: underline;
     }
 
-    .portfolio-item {
-        background: #3c2a96;
+    .info-contacto .fa, .info-contacto .fas, .info-contacto .far, .info-contacto .fal, .info-contacto .fa {
+        color: #3c2a98;
+        margin-right: 6px;
     }
-    /* Fin de Página de inicio: Portfolio */
+    /* Fin de Página de Contacto: Información de contacto */
+
+    /* Página de Contacto: Déjanos un mensaje */
+    #form_dejanos_un_mensaje textarea {
+        min-height: 93px;
+        max-height: 200px;
+    }
+    /* Fin de Página de Contacto: Déjanos un mensaje */
 
     /* Footer: Sticky footer */
     html {
@@ -12114,9 +12067,9 @@
             <div class="row">
                 <div class="col-12">
 
-                    <h1>Estructuras metálicas</h1>
+                    <h1>Contacto</h1>
 
-                    <p class="text-center">Subtítulo con <span class="destacar">texto destacado</span>.</p>
+                    <p class="text-center">Solicita información sin compromiso</p>
                     
                 </div>
             </div>
@@ -12124,8 +12077,61 @@
     </div>
 
     <div class="container">
+        <div class="row">
+            <div class="col-md-6">
 
-        <h2>Hello World!</h2>
+                <h2>Información de contacto</h2>
+                
+                <div class="info-contacto">
+
+                    <div>
+                        <div class="nombre">Francisco Borge González</div>
+                        <i class="fa fa-phone-alt"></i>
+                        <a href="tel:+34 646 487 829">646 487 829</a>
+                    </div>
+
+                    <div>
+                        <div class="nombre">Fernando Ibáñez González</div>
+                        <i class="fa fa-phone-alt"></i>
+                        <a href="tel:+34 606 741 852">606 741 852</a>
+                    </div>
+
+                </div>
+
+                <div class="info-contacto">
+                    <div>
+                        <i class="fa fa-envelope"></i>
+                        <a href="mailto: contacto&#64;cumonor.es">contacto&#64;cumonor.es</a>
+                    </div>
+                </div>
+
+                <div class="info-contacto">
+                    <a href="https://goo.gl/maps/uRWNK61esC7uNdWPA" target="_blank">
+                        <span class="una-linea"><i class="fas fa-map-marker-alt" style='margin-top: 3px;'></i>Ver en Google Maps:</span><br/>
+                        <span class="una-linea">Carretera Nacional 620, P.K. 76'4, </span>
+                        <span class="una-linea">Magaz de Pisuerga, Palencia</span>
+                    </a>
+                </div>
+
+            </div>
+            <div class="col-md-6">
+
+                <h2>Déjanos un mensaje</h2>
+
+                <form id="form_dejanos_un_mensaje">
+                    <div class="form-group">
+                        <label for="correo_electronico">Correo electrónico</label>
+                        <input id="correo_electronico" name="correo_electronico" type="email" class="form-control" aria-describedby="emailHelp" required="required">
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" class="form-control" required="required"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Enviar</button>
+                </form>
+
+            </div>
+        </div>
 
   </div>
 </main>

@@ -2,7 +2,7 @@
 
 
   <!-- Título de esta página -->
-  <title>Estructuras metálicas | Cumonor - Cubiertas y Montajes Norte s.l.</title>
+  <title>Taller de reparación de maquinaria agrícola | Cumonor - Cubiertas y Montajes Norte s.l.</title>
 
   <!-- Description -->
   <meta name="description" content="Cumonor - Cubiertas y Montajes Norte s.l.">
@@ -54,8 +54,11 @@
   <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
   <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
   <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
-  <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.2.js"></script>
-  <script async custom-element="amp-image-lightbox" src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js"></script>
+  <script async custom-element="amp-lightbox-gallery" src="https://cdn.ampproject.org/v0/amp-lightbox-gallery-0.1.js"></script>
+  <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+  <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+  <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
+  <script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
 
 
   <!-- Mi CSS -->
@@ -11845,7 +11848,7 @@
     }
     /* Fin de navbar */
 
-    /* Página de inicio: Welcome Blurb */
+    /* Welcome Blurb */
     #welcome-blurb {
         margin-top: 50px;
     }
@@ -11876,111 +11879,27 @@
         font-weight: bold;
         text-transform: uppercase;
     }
-    /* Fin de Página de inicio: Welcome blurb */
+    /* Fin de Welcome blurb */
 
-    /* Página de inicio: ¿Por qué Cumonor? */
-    #por-que-cumonor {
-        padding: 50px 0;
-    }
-
-    #por-que-cumonor #ventajas {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-    
-    #por-que-cumonor .ventaja {
-        padding-right: 15px;
-        padding-left: 15px;
-    }
-    
-    #por-que-cumonor .ventaja p {
-        font-size: 17px;
-        font-weight: 500;
-        line-height: 1.23536;
-        letter-spacing: -.022em;
-        color: #888;
-    }
-    
-    #por-que-cumonor .ventaja.numero p:first-child {
-        margin-bottom: 0;
-    }
-    
-    #por-que-cumonor .ventaja.texto p:first-child {
-        margin-bottom: 3px;
-    }
-    
-    #por-que-cumonor .ventaja .subtitulo {
-        color: #1d1d1f;
-        font-weight: 700;
-    }
-    
-    #por-que-cumonor .ventaja.numero h3 {
-        font-size: 80px;
-        font-weight: 700;
-        line-height: 1;
-        letter-spacing: -.015em;
-    }
-    
-    #por-que-cumonor .ventaja.texto h3 {
-        font-size: 35px;
-        font-weight: 700;
-        line-height: 1.1;
-        letter-spacing: -.015em;
-        margin-bottom: 16px;
-    }
-    /* Página de inicio: ¿Por qué Cumonor? */
-
-    /* Página de inicio: Todos nuestros servicios */
-    #todos-nuestros-servicios {
-        padding: 50px 0;
-    }
-    
-    #todos-nuestros-servicios .servicio {
-        margin: auto;
-        width: fit-content;
-        transition: all .2s ease-in-out;
-    }
-
-    #todos-nuestros-servicios .servicio:hover {
-        transform: scale(1.015);
-    }
-
-    #todos-nuestros-servicios .servicio > a {
-        position: relative;
-    }
-
-    #todos-nuestros-servicios .servicio > a > div {
-        position: absolute;
-        bottom: 3px;
-        left: 0;
-        width: 100%;
-        min-height: 60px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        box-shadow: inset 0 0 40px 100px #ffffff85;
-        border-top-right-radius: 15%;
-        border-top-left-radius: 15%;
-    }
-
-    #todos-nuestros-servicios h3 {
-        color: #3c2a96;
+    /* Caja de precios */
+    #precio-card h4 {
         font-weight: bold;
+        text-transform: uppercase;
         text-align: center;
     }
-    /* Fin de Página de inicio: Todos nuestros servicios */
-    
-    /* Página de inicio: Portfolio */
-    #proyectos-realizados {
-        padding: 50px 0;
+
+    #precio-card h5 {
+        font-size: 2.5rem;
+        font-weight: 500;
+        line-height: 1.2;
+        text-align: center;
     }
 
-    .portfolio-item {
-        background: #3c2a96;
+    #precio-card li {
+        text-align: center
     }
-    /* Fin de Página de inicio: Portfolio */
+    /* Fin de Caja de precios */
+
 
     /* Footer: Sticky footer */
     html {
@@ -12114,7 +12033,7 @@
             <div class="row">
                 <div class="col-12">
 
-                    <h1>Estructuras metálicas</h1>
+                    <h1>Taller de reparación de maquinaria agrícola</h1>
 
                     <p class="text-center">Subtítulo con <span class="destacar">texto destacado</span>.</p>
                     
@@ -12124,9 +12043,89 @@
     </div>
 
     <div class="container">
+        <div class="row">
+            <div class="col-md-9">
 
-        <h2>Hello World!</h2>
+                <h2>Lorem ipsum dolor sit amet consectetur.</h2>
 
+                <p>Ea tempor consequat non in est quis duis ea laboris culpa ipsum minim aute. Labore voluptate Lorem incididunt nulla anim ullamco. Aute ut ex occaecat sunt veniam aliquip laborum esse consequat elit cillum.</p>
+                <p>Exercitation magna nostrud velit consequat irure anim. Nulla ipsum eiusmod aute est. Nisi non ullamco aliqua ea ea consequat sint eu consectetur anim. Ex Lorem et ad eu et eiusmod laboris. Aute fugiat occaecat consequat occaecat nulla ea pariatur id. In exercitation aliqua enim amet Lorem amet cillum non.</p>
+
+            </div>
+            <div class="col-md-3">
+
+                <div id="precio-card" class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-normal">Precio</h4>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title pricing-card-title">15 €</h5>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>Característica 1</li>
+                            <li>Característica 2</li>
+                            <li>Característica 3</li>
+                            <li>Característica 4</li>
+                        </ul>
+                        <button type="button" class="btn btn-lg btn-block btn-primary">Contactar</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                
+                <amp-state id="carousel1">
+                    <script type="application/json">
+                        {
+                            "selectedSlide": 0
+                        }
+                    </script>
+                </amp-state>
+
+                <amp-carousel on="slideChange:AMP.setState({carousel1: {selectedSlide:event.index}})"
+                    [slide]="carousel1.selectedSlide" lightbox id="imageSlides1" layout="intrinsic"
+                    width="1600" height="1200" type="slides" loop>
+                    <div class="slide">
+                        <amp-img src="images/portfolio/proyecto-1--ikea/ikea-01.jpg"
+                            width="1600" height="1200" layout="intrinsic"></amp-img>
+                    </div>
+                    <div class="slide">
+                        <amp-img src="images/portfolio/proyecto-1--ikea/ikea-02.jpg"
+                            width="1600" height="1200" layout="intrinsic"></amp-img>
+                    </div>
+                    <div class="slide">
+                        <amp-img src="images/portfolio/proyecto-1--ikea/ikea-03.jpg"
+                            width="1600" height="1200" layout="intrinsic"></amp-img>
+                    </div>
+                    <div class="slide">
+                        <amp-img src="images/portfolio/proyecto-1--ikea/ikea-04.jpg"
+                            width="1600" height="1200" layout="intrinsic"></amp-img>
+                    </div>
+                    <div class="slide">
+                        <amp-img src="images/portfolio/proyecto-1--ikea/ikea-05.jpg"
+                            width="1600" height="1200" layout="intrinsic"></amp-img>
+                    </div>
+                </amp-carousel>
+
+                <amp-selector id="ampSelector" [selected]="carousel1.selectedSlide"
+                    on="select:AMP.setState({carousel1: {selectedSlide:event.targetOption}})">
+                    <amp-carousel layout="intrinsic" width="1600" height="72" class="thumbnail-carousel">
+                        <amp-img src="images/portfolio/proyecto-1--ikea/ikea-01.jpg" selected
+                            option="0" role="button" tabindex="1" width="96" height="72" layout="fixed"></amp-img>
+                        <amp-img src="images/portfolio/proyecto-1--ikea/ikea-02.jpg"
+                            option="1" role="button" tabindex="1"  width="96" height="72" layout="fixed"></amp-img>
+                        <amp-img src="images/portfolio/proyecto-1--ikea/ikea-03.jpg"
+                            option="2" role="button" tabindex="1" width="96" height="72" layout="fixed"></amp-img>
+                        <amp-img src="images/portfolio/proyecto-1--ikea/ikea-04.jpg"
+                            option="3" role="button" tabindex="1" width="96" height="72" layout="fixed"></amp-img>
+                        <amp-img src="images/portfolio/proyecto-1--ikea/ikea-05.jpg"
+                            option="4" role="button" tabindex="1" width="96" height="72" layout="fixed"></amp-img>
+                    </amp-carousel>
+                </amp-selector>
+
+            </div>
+        </div>
   </div>
 </main>
 
