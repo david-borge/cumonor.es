@@ -129,7 +129,7 @@
         </div>
 
         <div class="barra-superior--contacto">
-            <a href="https://goo.gl/maps/uRWNK61esC7uNdWPA" target="_blank" title="Carretera Nacional 620, P.K. 76'4, Magaz de Pisuerga, Palencia">
+            <a href="https://www.google.es/maps/place/Cumonor+Cubiertas+y+Montajes+Norte+S.L./@41.9619475,-4.338571,674m/data=!3m2!1e3!4b1!4m5!3m4!1s0xd465358037dac73:0xabf85e2a37702e0c!8m2!3d41.9619475!4d-4.3363823" target="_blank" rel="noopener" title="Carretera Nacional 620, P.K. 76'4, Magaz de Pisuerga, Palencia">
                 <span class="una-linea"><i class="fas fa-map-marker-alt" style='margin-top: 3px;'></i>Ver en Google Maps</span>
             </a>
         </div>
