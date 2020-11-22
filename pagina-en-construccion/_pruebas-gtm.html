@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+
+    <!-- NO indexer la web en los motores de búsqueda (como Google) -->
+    <meta name="robots" content="noindex,nofollow" />
+
+
+    <!-- Data Layer -->
+    <!-- Cuidado: la definición inicial de la dataLayer (en <head>) debe ir ANTES del script de Google Tag Manager (en <head>). -->
+    <script>
+        dataLayer = [
+            {
+                'key1': 'value1',
+                'key2': 'value2'
+            }
+        ];
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>!function(e,t,a,n){e[n]=e[n]||[],e[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var g=t.getElementsByTagName(a)[0],m=t.createElement(a);m.async=!0,m.src="https://www.googletagmanager.com/gtm.js?id=GTM-MCZVXFT",g.parentNode.insertBefore(m,g)}(window,document,"script","dataLayer");</script>
+    <!-- End Google Tag Manager -->
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pruebas GTM</title>
+
+
+</head>
+<body>
+    
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MCZVXFT" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+
+    <h1>Pruebas GTM</h1>
+
+    <button class="btn btn-prueba" onclick="jquery.select('something')">Botón</button>
+
+    <button class="btn btn-prueba-2">Botón 2</button>
+
+    <!-- Data Layer -->
+    <script>
+        dataLayer.push(
+            {
+                'key3': 'value3',
+                'event': 'Añadir la pareja key3, value3.'  // Esto es para que GTM pille el cambio en la dataLayer.
+            }
+        );
+    </script>
+
+</body>
+</html>
