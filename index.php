@@ -187,20 +187,6 @@
         }
         /* Fin de: Todos nuestros servicios */
 
-        /* Portfolio */
-        #proyectos-realizados {
-            padding: 50px 0;
-        }
-
-        .portfolio-item {
-            background: #3c2a96;
-        }
-
-        .portfolio-item amp-selector amp-img:not([selected]) {
-            filter: grayscale(1);
-        }
-        /* Fin de: Portfolio */
-
     </style>
 
 
@@ -250,7 +236,7 @@
 
 </head>
 
-<body id="<?= basename(__FILE__, '.php'); ?>">
+<body id="inicio">
 
 
     <!-- Google Tag Manager -->
@@ -474,124 +460,66 @@
                 </div>
             </div>
 
-            <div id="proyectos-realizados" class="row">
+            <div class="row py-5">
                 <div class="col-12">
 
-                    <h2>Portfolio</h2>
+                    <h2>Proyectos realizados</h2>
                     <div class="h2-separador">
                         <div class="h2-separador-inner"></div>
                     </div>
 
                     <div class="row">
-                        <div class="col-12 col-md-6">
+                        <div class="col-12 col-md-4">
 
-                            <div class="portfolio-item">
-                                <h3 class="titulo-portfolio-item">IKEA (Valladolid)</h3>
-
-                                <amp-state id="carousel1">
-                                    <script type="application/json">
-                                        {
-                                            "selectedSlide": 0
-                                        }
-                                    </script>
-                                </amp-state>
-
-                                <amp-carousel on="slideChange:AMP.setState({carousel1: {selectedSlide:event.index}})"
-                                    [slide]="carousel1.selectedSlide" lightbox id="imageSlides1" layout="intrinsic"
-                                    width="1600" height="1200" type="slides" loop>
-                                    <div class="slide">
-                                        <amp-img src="images/portfolio/proyecto-1--ikea/ikea-01.jpg"
-                                            width="1600" height="1200" layout="intrinsic"></amp-img>
+                            <div class="proyecto-realizado">
+                                <a href="proyecto-ikea-valladolid.php">
+                                    <amp-img src="images/proyectos-realizados/ikea-valladolid/ikea-valladolid-miniatura.jpg"
+                                        width="400"
+                                        height="300"
+                                        layout="intrinsic"
+                                        alt="IKEA (Valladolid)">
+                                    </amp-img>
+                                    <div class="informacion">
+                                        <h3>IKEA</h3>
+                                        <div class="ubicacion">Valladolid</div>
                                     </div>
-                                    <div class="slide">
-                                        <amp-img src="images/portfolio/proyecto-1--ikea/ikea-02.jpg"
-                                            width="1600" height="1200" layout="intrinsic"></amp-img>
-                                    </div>
-                                    <div class="slide">
-                                        <amp-img src="images/portfolio/proyecto-1--ikea/ikea-03.jpg"
-                                            width="1600" height="1200" layout="intrinsic"></amp-img>
-                                    </div>
-                                    <div class="slide">
-                                        <amp-img src="images/portfolio/proyecto-1--ikea/ikea-04.jpg"
-                                            width="1600" height="1200" layout="intrinsic"></amp-img>
-                                    </div>
-                                    <div class="slide">
-                                        <amp-img src="images/portfolio/proyecto-1--ikea/ikea-05.jpg"
-                                            width="1600" height="1200" layout="intrinsic"></amp-img>
-                                    </div>
-                                </amp-carousel>
-
-                                <amp-selector id="ampSelector" [selected]="carousel1.selectedSlide"
-                                    on="select:AMP.setState({carousel1: {selectedSlide:event.targetOption}})">
-                                    <amp-carousel layout="intrinsic" width="1600" height="72" class="thumbnail-carousel">
-                                        <amp-img src="images/portfolio/proyecto-1--ikea/ikea-01.jpg" selected
-                                            option="0" role="button" tabindex="1" width="96" height="72" layout="fixed"></amp-img>
-                                        <amp-img src="images/portfolio/proyecto-1--ikea/ikea-02.jpg"
-                                            option="1" role="button" tabindex="1"  width="96" height="72" layout="fixed"></amp-img>
-                                        <amp-img src="images/portfolio/proyecto-1--ikea/ikea-03.jpg"
-                                            option="2" role="button" tabindex="1" width="96" height="72" layout="fixed"></amp-img>
-                                        <amp-img src="images/portfolio/proyecto-1--ikea/ikea-04.jpg"
-                                            option="3" role="button" tabindex="1" width="96" height="72" layout="fixed"></amp-img>
-                                        <amp-img src="images/portfolio/proyecto-1--ikea/ikea-05.jpg"
-                                            option="4" role="button" tabindex="1" width="96" height="72" layout="fixed"></amp-img>
-                                    </amp-carousel>
-                                </amp-selector>
+                                </a>
                             </div>
 
                         </div>
-                        <div class="col-12 col-md-6">
+                        <div class="col-12 col-md-4">
 
-                            <div class="portfolio-item">
-                                <h3 class="titulo-portfolio-item">Centro logístico Coca-Cola (Badajoz)</h3>
-                                
-                                <amp-state id="carousel2">
-                                    <script type="application/json">
-                                        {
-                                            "selectedSlide": 0
-                                        }
-                                    </script>
-                                </amp-state>
+                            <div class="proyecto-realizado">
+                                <a href="proyecto-centro-logistico-coca-cola-badajoz.php">
+                                    <amp-img src="images/proyectos-realizados/centro-logistico-coca-cola-badajoz/centro-logistico-coca-cola-badajoz-miniatura.jpg"
+                                        width="400"
+                                        height="300"
+                                        layout="intrinsic"
+                                        alt="Centro logístico Coca-Cola (Badajoz)">
+                                    </amp-img>
+                                    <div class="informacion">
+                                        <h3>Centro logístico Coca-Cola</h3>
+                                        <div class="ubicacion">Badajoz</div>
+                                    </div>
+                                </a>
+                            </div>
 
-                                <amp-carousel on="slideChange:AMP.setState({carousel2: {selectedSlide:event.index}})"
-                                    [slide]="carousel2.selectedSlide" lightbox id="imageSlides2" layout="intrinsic"
-                                    width="1600" height="1200" type="slides" loop>
-                                    <div class="slide">
-                                        <amp-img src="images/portfolio/proyecto-2--coca-cola/coca-cola-01.jpg"
-                                            width="1600" height="1200" layout="intrinsic"></amp-img>
-                                    </div>
-                                    <div class="slide">
-                                        <amp-img src="images/portfolio/proyecto-2--coca-cola/coca-cola-02.jpg"
-                                            width="1600" height="1200" layout="intrinsic"></amp-img>
-                                    </div>
-                                    <div class="slide">
-                                        <amp-img src="images/portfolio/proyecto-2--coca-cola/coca-cola-03.jpg"
-                                            width="1600" height="1200" layout="intrinsic"></amp-img>
-                                    </div>
-                                    <div class="slide">
-                                        <amp-img src="images/portfolio/proyecto-2--coca-cola/coca-cola-04.jpg"
-                                            width="1600" height="1200" layout="intrinsic"></amp-img>
-                                    </div>
-                                    <div class="slide">
-                                        <amp-img src="images/portfolio/proyecto-2--coca-cola/coca-cola-05.jpg"
-                                            width="1600" height="1200" layout="intrinsic"></amp-img>
-                                    </div>
-                                </amp-carousel>
+                        </div>
+                        <div class="col-12 col-md-4">
 
-                                <amp-selector id="ampSelector" [selected]="carousel2.selectedSlide"
-                                    on="select:AMP.setState({carousel2: {selectedSlide:event.targetOption}})">
-                                    <amp-carousel layout="intrinsic" width="1600" height="72" class="thumbnail-carousel">
-                                        <amp-img src="images/portfolio/proyecto-2--coca-cola/coca-cola-01.jpg" selected
-                                            option="0" role="button" tabindex="1" width="96" height="72" layout="fixed"></amp-img>
-                                        <amp-img src="images/portfolio/proyecto-2--coca-cola/coca-cola-02.jpg"
-                                            option="1" role="button" tabindex="1"  width="96" height="72" layout="fixed"></amp-img>
-                                        <amp-img src="images/portfolio/proyecto-2--coca-cola/coca-cola-03.jpg"
-                                            option="2" role="button" tabindex="1" width="96" height="72" layout="fixed"></amp-img>
-                                        <amp-img src="images/portfolio/proyecto-2--coca-cola/coca-cola-04.jpg"
-                                            option="3" role="button" tabindex="1" width="96" height="72" layout="fixed"></amp-img>
-                                        <amp-img src="images/portfolio/proyecto-2--coca-cola/coca-cola-05.jpg"
-                                            option="4" role="button" tabindex="1" width="96" height="72" layout="fixed"></amp-img>
-                                    </amp-carousel>
-                                </amp-selector>
+                            <div class="proyecto-realizado">
+                                <a href="proyecto-pascual-ubicacion.php">
+                                    <amp-img src="images/proyectos-realizados/pascual-ubicacion/pascual-ubicacion-miniatura.jpg"
+                                        width="400"
+                                        height="300"
+                                        layout="intrinsic"
+                                        alt="Pascual (¿Ubicación?)">
+                                    </amp-img>
+                                    <div class="informacion">
+                                        <h3>Pascual</h3>
+                                        <div class="ubicacion">¿Ubicación?</div>
+                                    </div>
+                                </a>
                             </div>
 
                         </div>
@@ -599,7 +527,7 @@
 
                     <div class="row">
                         <div class="col-12 boton-ver-todo">
-                            <a href="portfolio.php">Ver todo el portfolio</a>
+                            <a href="proyectos-realizados.php">Ver todos los proyectos realizados</a>
                         </div>
                     </div>
 

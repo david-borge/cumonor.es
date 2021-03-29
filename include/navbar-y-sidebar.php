@@ -204,7 +204,7 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link <?= ( ( $nombre_del_archivo_de_la_pagina_actual == "portfolio.php" ) ? 'active' : '' ); ?>" href="portfolio.php">Portfolio</a>
+                <a class="nav-link <?= ( ( $nombre_del_archivo_de_la_pagina_actual == "proyectos-realizados.php" ) ? 'active' : '' ); ?>" href="proyectos-realizados.php">Proyectos</a>
             </li>
 
             <li class="nav-item">
@@ -277,7 +277,7 @@
 
             <li><a href="taller-de-reparacion-de-maquinaria-agricola.php">Taller</a></li>
 
-            <li><a href="portfolio.php">Portfolio</a></li>
+            <li><a href="proyectos-realizados.php">Proyectos</a></li>
 
             <li><a href="contacto.php">Contacto</a></li>
 

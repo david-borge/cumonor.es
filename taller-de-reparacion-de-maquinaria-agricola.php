@@ -167,23 +167,23 @@
                         [slide]="carousel1.selectedSlide" lightbox id="imageSlides1" layout="intrinsic"
                         width="1600" height="1200" type="slides" loop>
                         <div class="slide">
-                            <amp-img src="images/portfolio/proyecto-1--ikea/ikea-01.jpg"
+                            <amp-img src="images/proyectos-realizados/ikea-valladolid/ikea-valladolid-01.jpg"
                                 width="1600" height="1200" layout="intrinsic"></amp-img>
                         </div>
                         <div class="slide">
-                            <amp-img src="images/portfolio/proyecto-1--ikea/ikea-02.jpg"
+                            <amp-img src="images/proyectos-realizados/ikea-valladolid/ikea-valladolid-02.jpg"
                                 width="1600" height="1200" layout="intrinsic"></amp-img>
                         </div>
                         <div class="slide">
-                            <amp-img src="images/portfolio/proyecto-1--ikea/ikea-03.jpg"
+                            <amp-img src="images/proyectos-realizados/ikea-valladolid/ikea-valladolid-03.jpg"
                                 width="1600" height="1200" layout="intrinsic"></amp-img>
                         </div>
                         <div class="slide">
-                            <amp-img src="images/portfolio/proyecto-1--ikea/ikea-04.jpg"
+                            <amp-img src="images/proyectos-realizados/ikea-valladolid/ikea-valladolid-04.jpg"
                                 width="1600" height="1200" layout="intrinsic"></amp-img>
                         </div>
                         <div class="slide">
-                            <amp-img src="images/portfolio/proyecto-1--ikea/ikea-05.jpg"
+                            <amp-img src="images/proyectos-realizados/ikea-valladolid/ikea-valladolid-05.jpg"
                                 width="1600" height="1200" layout="intrinsic"></amp-img>
                         </div>
                     </amp-carousel>
@@ -191,15 +191,15 @@
                     <amp-selector id="ampSelector" [selected]="carousel1.selectedSlide"
                         on="select:AMP.setState({carousel1: {selectedSlide:event.targetOption}})">
                         <amp-carousel layout="intrinsic" width="1600" height="72" class="thumbnail-carousel">
-                            <amp-img src="images/portfolio/proyecto-1--ikea/ikea-01.jpg" selected
+                            <amp-img src="images/proyectos-realizados/ikea-valladolid/ikea-valladolid-01.jpg" selected
                                 option="0" role="button" tabindex="1" width="96" height="72" layout="fixed"></amp-img>
-                            <amp-img src="images/portfolio/proyecto-1--ikea/ikea-02.jpg"
+                            <amp-img src="images/proyectos-realizados/ikea-valladolid/ikea-valladolid-02.jpg"
                                 option="1" role="button" tabindex="1"  width="96" height="72" layout="fixed"></amp-img>
-                            <amp-img src="images/portfolio/proyecto-1--ikea/ikea-03.jpg"
+                            <amp-img src="images/proyectos-realizados/ikea-valladolid/ikea-valladolid-03.jpg"
                                 option="2" role="button" tabindex="1" width="96" height="72" layout="fixed"></amp-img>
-                            <amp-img src="images/portfolio/proyecto-1--ikea/ikea-04.jpg"
+                            <amp-img src="images/proyectos-realizados/ikea-valladolid/ikea-valladolid-04.jpg"
                                 option="3" role="button" tabindex="1" width="96" height="72" layout="fixed"></amp-img>
-                            <amp-img src="images/portfolio/proyecto-1--ikea/ikea-05.jpg"
+                            <amp-img src="images/proyectos-realizados/ikea-valladolid/ikea-valladolid-05.jpg"
                                 option="4" role="button" tabindex="1" width="96" height="72" layout="fixed"></amp-img>
                         </amp-carousel>
                     </amp-selector>
