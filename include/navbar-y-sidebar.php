@@ -137,7 +137,7 @@
 </div>
 
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-sticky">
+<nav class="navbar navbar-expand-lg navbar-light navbar-sticky">
 
   <div class="container">
 

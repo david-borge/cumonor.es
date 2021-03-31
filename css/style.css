@@ -4771,6 +4771,7 @@ input[type=submit].btn-block {
     justify-content: space-between;
     padding: 8px 1rem;
 
+    background-color: white;
     box-shadow: rgba(0, 0, 0, 0.055) 0px 8px 25px 0px;
 }
 
