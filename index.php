@@ -16,7 +16,7 @@
 
     <!-- AMP Preloads: Hero image (Preload an important image in the first viewport to improve page load time.) -->
     <!-- Referencia: https://developer.mozilla.org/en-US/docs/Web/HTML/Preloading_content -->
-    <!-- <link rel="preload" href="images/cumonor-cubiertas-y-montajes-norte-s.l.--logo-con-texto-en-una-linea.png" as="image"> -->
+    <!-- <link rel="preload" href="images/logo/cumonor-cubiertas-y-montajes-norte-s.l.-logo-con-texto-en-una-linea.png" as="image"> -->
 
     <!-- AMP script principal -->
     <script async src="https://cdn.ampproject.org/v0.js"></script>
@@ -57,8 +57,8 @@
         }
 
         #welcome-blurb .col-12 {
-            min-height: 40vh;
-
+            min-height: 300px;
+            
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -121,8 +121,18 @@
             margin-bottom: 3px;
         }
 
+        #por-que-cumonor .ventaja.numero .mas {
+            display: inline;
+            margin-right: 7px;
+            font-size: 30px;
+            font-weight: 700;
+            vertical-align: super;
+            color: #3c2a96;
+        }
+
         #por-que-cumonor .ventaja.numero h3 {
-            font-size: 80px;
+            display: inline;
+            font-size: 45px;
             font-weight: 700;
             line-height: 1;
             letter-spacing: -.015em;
@@ -130,7 +140,7 @@
         }
 
         #por-que-cumonor .ventaja.texto h3 {
-            font-size: 35px;
+            font-size: 32px;
             font-weight: 700;
             line-height: 1.1;
             letter-spacing: -.015em;
@@ -275,27 +285,25 @@
                     <div id="ventajas">
 
                         <div class="ventaja numero">
-                            <p>Más de</p>
+                            <span class="mas">+</span>
                             <h3 style='margin-left: -8px;'>110</h3>
                             <p class="subtitulo">Proyectos realizados</p>
                             <p>Para IKEA, Coca-Cola, Pascual, Siro, Gullón y muchos otros.</p>
                         </div>
 
                         <div class="ventaja numero">
-                            <p>Más de</p>
+                            <span class="mas">+</span>
                             <h3 style='margin-left: -4px;'>30</h3>
                             <p class="subtitulo">Años de experiencia</p>
                             <p>Nacidos de la fusión de Montajes JuanFran S.L. y XXXXX.</p>
                         </div>
 
                         <div class="ventaja texto">
-                            <p>Contamos con</p>
                             <h3>Maquinaria propia</h3>
                             <p>[Breve texto respecto a la maquinaria propia.]</p>
                         </div>
 
                         <div class="ventaja texto">
-                            <p>Y con un</p>
                             <h3>Equipo profesional</h3>
                             <p>Altamente cualificado.</p>
                         </div>

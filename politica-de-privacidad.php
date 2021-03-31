@@ -6,13 +6,13 @@
 
 
     <!-- Título de esta página -->
-    <title>Gracias - Cumonor</title>
+    <title>Política de privacidad - Cumonor</title>
 
     <!-- Description de esta página -->
-    <meta name="description" content="Gracias por enviar un mensaje a Cumonor.">
+    <meta name="description" content="Error 505 en la web de Cumonor.">
 
     <!-- URL canónica de esta página -->
-    <link rel="canonical" href="https://cumonor.es/gracias.php">
+    <link rel="canonical" href="https://cumonor.es/error-505.php">
 
 
     <!-- AMP Preloads -->
@@ -108,13 +108,15 @@
         <div id="welcome-blurb">
             <div class="container">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-12 col-md-8 offset-md-2">
 
-                        <h1>¡Gracias!</h1>
+                        <h1 class="pb-4">Política de privacidad</h1>
 
-                        <p class="text-center">Contactaremos contigo lo antes posible.</p>
-                        
-                        <p class="text-center"><a href="index.php"> Ir a la página de inicio</a></p>
+                        <p class="text-justify">Texto del Política de privacidad. Texto del Política de privacidad. Texto del Política de privacidad. Texto del Política de privacidad. Texto del Política de privacidad. Texto del Política de privacidad. Texto del Política de privacidad. Texto del Política de privacidad. Texto del Política de privacidad. Texto del Política de privacidad. Texto del Política de privacidad. Texto del Política de privacidad.</p>
+                        <p class="text-justify">Texto del Política de privacidad. Texto del Política de privacidad. Texto del Política de privacidad. Texto del Política de privacidad. Texto del Política de privacidad. Texto del Política de privacidad. Texto del Política de privacidad. Texto del Política de privacidad. Texto del Política de privacidad. Texto del Política de privacidad. Texto del Política de privacidad. Texto del Política de privacidad.</p>
+                        <p class="text-justify">Texto del Política de privacidad. Texto del Política de privacidad. Texto del Política de privacidad. Texto del Política de privacidad. Texto del Política de privacidad. Texto del Política de privacidad. Texto del Política de privacidad. Texto del Política de privacidad. Texto del Política de privacidad. Texto del Política de privacidad. Texto del Política de privacidad. Texto del Política de privacidad.</p>
+                        <p class="text-justify">Texto del Política de privacidad. Texto del Política de privacidad. Texto del Política de privacidad. Texto del Política de privacidad. Texto del Política de privacidad. Texto del Política de privacidad. Texto del Política de privacidad. Texto del Política de privacidad. Texto del Política de privacidad. Texto del Política de privacidad. Texto del Política de privacidad. Texto del Política de privacidad.</p>
+                        <p class="text-justify">Texto del Política de privacidad. Texto del Política de privacidad. Texto del Política de privacidad. Texto del Política de privacidad. Texto del Política de privacidad. Texto del Política de privacidad. Texto del Política de privacidad. Texto del Política de privacidad. Texto del Política de privacidad. Texto del Política de privacidad. Texto del Política de privacidad. Texto del Política de privacidad.</p>
                         
                     </div>
                 </div>

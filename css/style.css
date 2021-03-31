@@ -3632,10 +3632,10 @@ input[type=submit].btn-block {
     color: #1d1d1f;
     text-align: left;
     list-style: none;
-    background-color: #fff;
+    background-color: #f8f9fa;
     background-clip: padding-box;
-    border: 1px solid rgba(0, 0, 0, .15);
-    border-radius: .25rem
+    border-radius: 4px;
+    box-shadow: 0 3px 4px rgb(0 0 0 / 20%);
 }
 
 .dropdown-menu-left {
@@ -4769,7 +4769,9 @@ input[type=submit].btn-block {
     align-items: center;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: .5rem 1rem
+    padding: 8px 1rem;
+
+    box-shadow: rgba(0, 0, 0, 0.055) 0px 8px 25px 0px;
 }
 
 .navbar .container,
@@ -11507,6 +11509,7 @@ h2 {
 }
 
 .boton-ver-todo a {
+    border: 1px solid #3c2a96;
     border-radius: 2px;
     
     padding-top: 13px;
@@ -11518,7 +11521,7 @@ h2 {
     font-size: 14px;
     text-transform: uppercase;
     text-align: center;
-    color: #333;
+    color: #3c2a96;
     letter-spacing: 2px;
 
     transition-delay: 0s;
@@ -11538,18 +11541,21 @@ h2 {
 #barra-superior--breadcrumbs {
     min-width: 145px;
     font-size: 13px;
+    line-height: 20px;
 }
 
 #barra-superior--telefono-emails-ubicacion {
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    line-height: 20px;
 }
 
 #barra-superior--breadcrumbs-telefono-emails-ubicacion {
-    margin-bottom: 10px;
     border-bottom: 1px solid #3c2a9638;
-    padding: 0 0 1px 0;
+    padding: 8px 0;
+
+    display: flex;
 }
 
 #barra-superior--breadcrumbs-telefono-emails-ubicacion #estas-aqui {
@@ -11872,40 +11878,33 @@ main {
 /* Footer: general */
 footer {
     margin-top: 50px;
-    border-top: 1px solid #3c2a9696;
     padding: 50px 0;
+    background-color: #281c63;
 }
 
 footer h5 {
-    margin-bottom: 15px;
-    border-bottom: 1px solid #3c2a9630;
+    margin-bottom: 19px;
+    border-bottom: 1px solid white;
+    padding-left: 10px;
     padding-bottom: 10px;
-    font-size: 12px;
+    font-size: 19px;
     font-weight: bold;
-    color: #3c2a96;
-    text-transform: uppercase;
-    text-align: center;
+    color: white;
 }
 
 footer h6 {
-    font-size: 12px;
     font-weight: bold;
-    color: #3c2a96;
+    color: white;
 }
 
 footer p {
     margin-bottom: 0;
 }
 
-footer a {
-    font-size: 12px;
-    color: #3c2a96;
-}
-
+footer a,
 footer a:hover {
-    color: #3c2a96;
+    color: white;
 }
-
 /* Footer: general */
 
 
@@ -11916,14 +11915,10 @@ footer a:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 
-    text-align: center;
-    font-size: 12px;
-    color: #3c2a98;
+    color: white;
 }
 
 .footer-contacto>div {
@@ -11944,13 +11939,12 @@ footer a:hover {
 }
 
 .footer-contacto a {
-    color: #3c2a98;
+    color: white;
     text-decoration: none;
-    text-align: center;
 }
 
 .footer-contacto a:hover {
-    color: #3c2a98;
+    color: white;
     text-decoration: underline;
 }
 
@@ -11959,7 +11953,7 @@ footer a:hover {
 .footer-contacto .far,
 .footer-contacto .fal,
 .footer-contacto .fa {
-    color: #3c2a98;
+    color: white;
     margin-right: 6px;
 }
 

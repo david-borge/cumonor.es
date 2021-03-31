@@ -101,9 +101,8 @@
     }
 ?>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-sticky">
 
-  <div id="barra-superior--breadcrumbs-telefono-emails-ubicacion" class="container">
+<div id="barra-superior--breadcrumbs-telefono-emails-ubicacion" class="container">
 
     <div id="barra-superior--breadcrumbs"><?= ( ( isset($breadcrumbs) ) ? $breadcrumbs : '' ); ?></div>
 
@@ -124,7 +123,7 @@
         <div class="barra-superior--contacto">
             <div>
                 <i class="fa fa-envelope"></i>
-                <a href="mailto: contacto&#64;cumonor.es">contacto&#64;cumonor.es</a>
+                <a href="mailto:contacto&#64;cumonor.es">contacto&#64;cumonor.es</a>
             </div>
         </div>
 
@@ -135,18 +134,22 @@
         </div>
     </div>
                     
-  </div>
+</div>
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-sticky">
 
   <div class="container">
 
-      <a class="navbar-brand" href="index.php">
+      <a class="navbar-brand" href="index.php" style="line-height: 0;">
         <!-- Hero image (preloaded) -->
-        <!-- Nota: debe tener el mismo enlace que <link rel="preload" href="images/cumonor-cubiertas-y-montajes-norte-s.l.--logo-con-texto-en-una-linea.png" as="image"> -->
-        <amp-img src="images/cumonor-cubiertas-y-montajes-norte-s.l.--logo-con-texto-en-una-linea.png"
-            width="271" 
-            height="150"
+        <!-- Nota: debe tener el mismo enlace que <link rel="preload" href="images/logo/cumonor-cubiertas-y-montajes-norte-s.l.-logo-con-texto-en-una-linea.png" as="image"> -->
+        <amp-img src="images/logo/cumonor-cubiertas-y-montajes-norte-s.l.-logo.png"
+            width="225" 
+            height="101"
             layout="intrinsic" 
-            alt="Logo de Cumonor - Cubiertas y Montajes Norte s.l.">
+            alt="Cumonor - Cubiertas y Montajes Norte s.l. Logo"
+            style="max-width: 170px;">
         </amp-img>
       </a>
 
@@ -156,6 +159,8 @@
 
       <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
         <ul class="navbar-nav ml-auto">
+
+            <!-- CUIDADO: los cambios en el menú hay que hacerlos en aquí y en el menú móvil (#sidebar1). -->
 
             <li class="nav-item">
                 <a class="nav-link <?= ( ( $nombre_del_archivo_de_la_pagina_actual == "cumonor.es" || $nombre_del_archivo_de_la_pagina_actual == "index.php" ) ? 'active' : '' ); ?>" href="index.php">Inicio</a>
@@ -232,6 +237,8 @@
 
     <div>
         <ul class="clearlist">
+
+            <!-- CUIDADO: los cambios en el menú hay que hacerlos en aquí y en el menú de desktop (.navbar-nav). -->
 
             <li><a href="index.php">Inicio</a></li>
 
