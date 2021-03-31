@@ -1,3 +1,9 @@
+### NO INDEXAR ###
+# DISABLE DIRECTORY INDEXES
+Options -Indexes
+
+
+
 # Redireccionar a https y sin www
 RewriteCond %{HTTP_HOST} ^(www\.)(.+) [OR]
 RewriteCond %{HTTPS} off
