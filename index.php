@@ -30,7 +30,7 @@
     <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
     <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
     <script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
-    
+
 
     <!-- Head Tag Styles: Fuentes + iconos + favicon + CSS de AMP para cargar las páginas, incluyendo la animación inicial -->
     <?php include 'include/fuentes-iconos-favicon-y-css-de-amp.php';?>
@@ -58,7 +58,7 @@
 
         #welcome-blurb .col-12 {
             min-height: 300px;
-            
+
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -204,7 +204,7 @@
     <!-- Referencia: https://developers.google.com/search/docs/guides/intro-structured-data -->
     <!-- Referencias:
             · Página web: https://schema.org/WebPage
-            · 
+            ·
     -->
     <!-- TODO: REVISAR DATOS DE image Y PONER BREADCRUMB, CAROUSEL, FAQ, IMAGE LICENSE METADATA, LOCAL BUSINESS, LOGO y PRODUCT. -->
     <!-- TODO: cuando tenga mi empresa, cambiar el publiser a los datos de la empresa. -->
@@ -266,7 +266,7 @@
                         <h1>Cumonor</h1>
 
                         <p class="text-center">Diseño, fabricación y montaje <br>de estructuras y cerramientos metálicos.</p>
-                        
+
                     </div>
                 </div>
             </div>
@@ -323,15 +323,15 @@
                     <div class="row">
                         <div class="col-12 col-md-4">
 
-                            <div class="servicio">
+                            <div class="tarjeta-con-sombra-y-zoom-en-hover">
                                 <a href="estructuras-metalicas.php">
-                                    <amp-img src="images/placeholder.jpg"
-                                        width="600"
-                                        height="410"
+                                    <amp-img src="images/servicios/estructuras-metalicas/estructuras-metalicas-miniatura.jpg"
+                                        width="400"
+                                        height="300"
                                         layout="intrinsic"
                                         alt="Estructuras Metálicas">
                                     </amp-img>
-                                    <div>
+                                    <div class="informacion">
                                         <h3>Estructuras Metálicas</h3>
                                     </div>
                                 </a>
@@ -340,15 +340,15 @@
                         </div>
                         <div class="col-12 col-md-4">
 
-                            <div class="servicio">
+                            <div class="tarjeta-con-sombra-y-zoom-en-hover">
                                 <a href="cubiertas.php">
-                                    <amp-img src="images/placeholder.jpg"
-                                        width="600"
-                                        height="410"
+                                    <amp-img src="images/servicios/cubiertas/cubiertas-miniatura.jpg"
+                                        width="400"
+                                        height="300"
                                         layout="intrinsic"
                                         alt="Cubiertas">
                                     </amp-img>
-                                    <div>
+                                    <div class="informacion">
                                         <h3>Cubiertas</h3>
                                     </div>
                                 </a>
@@ -357,36 +357,36 @@
                         </div>
                         <div class="col-12 col-md-4">
 
-                            <div class="servicio">
+                            <div class="tarjeta-con-sombra-y-zoom-en-hover">
                                 <a href="reformas.php">
                                     <amp-img src="images/placeholder.jpg"
-                                        width="600"
-                                        height="410"
+                                        width="400"
+                                        height="300"
                                         layout="intrinsic"
                                         alt="Reformas">
                                     </amp-img>
-                                    <div>
-                                        <h3>Reformas</h3>
+                                    <div class="informacion">
+                                        <h3>Reformas <br>de Naves Industriales</h3>
                                     </div>
                                 </a>
                             </div>
-                            
+
                         </div>
                     </div>
 
                     <div class="row" style='margin-top: 30px;'>
                         <div class="col-12 col-md-4">
 
-                            <div class="servicio">
+                            <div class="tarjeta-con-sombra-y-zoom-en-hover">
                                 <a href="reparaciones.php">
-                                    <amp-img src="images/placeholder.jpg"
-                                        width="600"
-                                        height="410"
+                                    <amp-img src="images/servicios/reparaciones/reparaciones-miniatura.jpg"
+                                        width="400"
+                                        height="300"
                                         layout="intrinsic"
                                         alt="Reparaciones">
                                     </amp-img>
-                                    <div>
-                                        <h3>Reparaciones</h3>
+                                    <div class="informacion">
+                                        <h3 style="min-height: 48px;">Reparaciones</h3>
                                     </div>
                                 </a>
                             </div>
@@ -394,15 +394,15 @@
                         </div>
                         <div class="col-12 col-md-4">
 
-                            <div class="servicio">
+                            <div class="tarjeta-con-sombra-y-zoom-en-hover">
                                 <a href="limpieza-y-mantenimiento-de-naves-industriales.php">
                                     <amp-img src="images/placeholder.jpg"
-                                        width="600"
-                                        height="410"
+                                        width="400"
+                                        height="300"
                                         layout="intrinsic"
                                         alt="Limpieza y Mantenimiento de Naves Industriales">
                                     </amp-img>
-                                    <div>
+                                    <div class="informacion">
                                         <h3>Limpieza y Mantenimiento <br>de Naves Industriales</h3>
                                     </div>
                                 </a>
@@ -411,15 +411,15 @@
                         </div>
                         <div class="col-12 col-md-4">
 
-                            <div class="servicio">
+                            <div class="tarjeta-con-sombra-y-zoom-en-hover">
                                 <a href="naves-agricolas.php">
                                     <amp-img src="images/placeholder.jpg"
-                                        width="600"
-                                        height="410"
+                                        width="400"
+                                        height="300"
                                         layout="intrinsic"
                                         alt="Naves Agrícolas">
                                     </amp-img>
-                                    <div>
+                                    <div class="informacion">
                                         <h3>Naves Agrícolas</h3>
                                     </div>
                                 </a>
@@ -431,15 +431,15 @@
                     <div class="row" style='margin-top: 30px;'>
                         <div class="col-12 col-md-4">
 
-                            <div class="servicio">
+                            <div class="tarjeta-con-sombra-y-zoom-en-hover">
                                 <a href="limpieza-y-mantenimiento-de-viviendas.php">
                                     <amp-img src="images/placeholder.jpg"
-                                        width="600"
-                                        height="410"
+                                        width="400"
+                                        height="300"
                                         layout="intrinsic"
                                         alt="Limpieza y Mantenimiento de Viviendas">
                                     </amp-img>
-                                    <div>
+                                    <div class="informacion">
                                         <h3>Limpieza y Mantenimiento <br>de Viviendas</h3>
                                     </div>
                                 </a>
@@ -448,15 +448,15 @@
                         </div>
                         <div class="col-12 col-md-4">
 
-                            <div class="servicio">
+                            <div class="tarjeta-con-sombra-y-zoom-en-hover">
                                 <a href="taller-de-reparacion-de-maquinaria-agricola.php">
-                                    <amp-img src="images/inicio/servicios/taller-de-reparacion-de-maquinaria-agricola.jpg"
-                                        width="600"
-                                        height="410"
+                                    <amp-img src="images/servicios/taller-de-reparacion-de-maquinaria-agricola/taller-de-reparacion-de-maquinaria-agricola-miniatura.jpg"
+                                        width="400"
+                                        height="300"
                                         layout="intrinsic"
                                         alt="Taller de reparación de maquinaria agrícola">
                                     </amp-img>
-                                    <div>
+                                    <div class="informacion">
                                         <h3>Taller de reparación <br>de maquinaria agrícola</h3>
                                     </div>
                                 </a>
@@ -479,7 +479,7 @@
                     <div class="row">
                         <div class="col-12 col-md-4">
 
-                            <div class="proyecto-realizado">
+                            <div class="tarjeta-con-sombra-y-zoom-en-hover">
                                 <a href="proyecto-ikea-valladolid.php">
                                     <amp-img src="images/proyectos-realizados/ikea-valladolid/ikea-valladolid-miniatura.jpg"
                                         width="400"
@@ -497,7 +497,7 @@
                         </div>
                         <div class="col-12 col-md-4">
 
-                            <div class="proyecto-realizado">
+                            <div class="tarjeta-con-sombra-y-zoom-en-hover">
                                 <a href="proyecto-centro-logistico-coca-cola-badajoz.php">
                                     <amp-img src="images/proyectos-realizados/centro-logistico-coca-cola-badajoz/centro-logistico-coca-cola-badajoz-miniatura.jpg"
                                         width="400"
@@ -515,9 +515,9 @@
                         </div>
                         <div class="col-12 col-md-4">
 
-                            <div class="proyecto-realizado">
+                            <div class="tarjeta-con-sombra-y-zoom-en-hover">
                                 <a href="proyecto-pascual-ubicacion.php">
-                                    <amp-img src="images/proyectos-realizados/pascual-ubicacion/pascual-ubicacion-miniatura.jpg"
+                                    <amp-img src="images/placeholder.jpg"
                                         width="400"
                                         height="300"
                                         layout="intrinsic"
@@ -543,7 +543,7 @@
             </div>
 
         </div>
-        
+
     </main>
 
 

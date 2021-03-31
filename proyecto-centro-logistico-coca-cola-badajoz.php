@@ -138,18 +138,18 @@
 
                     <amp-carousel on="slideChange:AMP.setState({carousel: {selectedSlide:event.index}})"
                         [slide]="carousel.selectedSlide" 
-                        lightbox layout="responsive" width="1600" height="1200" type="slides" loop>
+                        lightbox layout="responsive" width="4" height="3" type="slides" loop>
 
                         <?php
-                            $ruta_imagenes_del_proyecto = 'images/proyectos-realizados/centro-logistico-coca-cola-badajoz/';
-							$files = scandir($ruta_imagenes_del_proyecto);
+                            $ruta_de_las_imagenes_de_la_galeria = 'images/proyectos-realizados/centro-logistico-coca-cola-badajoz/';
+							$files = scandir($ruta_de_las_imagenes_de_la_galeria);
 							$i = 0;
 							foreach($files as $file) {
-								if( $i >= 2 && endsWith($file, '.jpg') && !strpos($file, 'miniatura') ) {
+								if( $i >= 2 && ( endsWith($file, '.jpg') || endsWith($file, '.png') ) && !strpos($file, 'miniatura') ) {
 									?>
 
                                         <div class="slide">
-                                            <amp-img src="<?= $ruta_imagenes_del_proyecto.$file ?>" width="1600" height="1200" layout="responsive"></amp-img>
+                                            <amp-img src="<?= $ruta_de_las_imagenes_de_la_galeria.$file ?>" width="4" height="3" layout="responsive"></amp-img>
                                         </div>
 
 									<?php
@@ -170,16 +170,16 @@
 
                     <amp-selector class="d-flex justify-content-center" [selected]="carousel.selectedSlide"
                         on="select:AMP.setState({carousel: {selectedSlide:event.targetOption}})">
-                        <amp-carousel layout="fixed-height" height="78" class="thumbnail-carousel">
+                        <amp-carousel layout="fixed-height" height="20" class="thumbnail-carousel">
 
                             <?php
                                 $i = 0;
                                 $j = 0;
                                 foreach($files as $file) {
-                                    if( $i >= 2 && endsWith($file, '.jpg') && !strpos($file, 'miniatura') ) {
+                                    if( $i >= 2 && ( endsWith($file, '.jpg') || endsWith($file, '.png') ) && !strpos($file, 'miniatura') ) {
                                         ?>
     
-                                            <div class="carrusel-punto" style="outline: none;" option="<?= $j ?>" <?= ($j == 0) ? 'selected' : '' ?> role="button" tabindex="1" width="8" height="8" layout="fixed"></div>
+                                            <div class="carrusel-punto" style="outline: none;" option="<?= $j ?>" <?= ($j == 0) ? 'selected' : '' ?> role="button" tabindex="1"></div>
     
                                         <?php
                                         $j++;

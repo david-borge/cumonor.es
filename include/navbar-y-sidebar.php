@@ -19,7 +19,7 @@
         case 'estructuras-metalicas.php':
             $breadcrumbs = '<i class="fas fa-chevron-circle-right"></i>
                             <span id="estas-aqui">Estás aquí: </span>
-                            <span>Inicio</span>
+                            <span>Servicios</span>
                             <i class="fas fa-chevron-right"></i>
                             <span>Naves industriales</span>
                             <i class="fas fa-chevron-right"></i>
@@ -29,7 +29,7 @@
         case 'cubiertas.php':
             $breadcrumbs = '<i class="fas fa-chevron-circle-right"></i>
                             <span id="estas-aqui">Estás aquí: </span>
-                            <span>Inicio</span>
+                            <span>Servicios</span>
                             <i class="fas fa-chevron-right"></i>
                             <span>Naves industriales</span>
                             <i class="fas fa-chevron-right"></i>
@@ -39,7 +39,7 @@
         case 'reformas.php':
             $breadcrumbs = '<i class="fas fa-chevron-circle-right"></i>
                             <span id="estas-aqui">Estás aquí: </span>
-                            <span>Inicio</span>
+                            <span>Servicios</span>
                             <i class="fas fa-chevron-right"></i>
                             <span>Naves industriales</span>
                             <i class="fas fa-chevron-right"></i>
@@ -49,7 +49,7 @@
         case 'reparaciones.php':
             $breadcrumbs = '<i class="fas fa-chevron-circle-right"></i>
                             <span id="estas-aqui">Estás aquí: </span>
-                            <span>Inicio</span>
+                            <span>Servicios</span>
                             <i class="fas fa-chevron-right"></i>
                             <span>Naves industriales</span>
                             <i class="fas fa-chevron-right"></i>
@@ -59,7 +59,7 @@
         case 'limpieza-y-mantenimiento-de-naves-industriales.php':
             $breadcrumbs = '<i class="fas fa-chevron-circle-right"></i>
                             <span id="estas-aqui">Estás aquí: </span>
-                            <span>Inicio</span>
+                            <span>Servicios</span>
                             <i class="fas fa-chevron-right"></i>
                             <span>Naves industriales</span>
                             <i class="fas fa-chevron-right"></i>
@@ -69,9 +69,7 @@
         case 'naves-agricolas.php':
             $breadcrumbs = '<i class="fas fa-chevron-circle-right"></i>
                             <span id="estas-aqui">Estás aquí: </span>
-                            <span>Inicio</span>
-                            <i class="fas fa-chevron-right"></i>
-                            <span>Naves industriales</span>
+                            <span>Servicios</span>
                             <i class="fas fa-chevron-right"></i>
                             <span id="pagina-actual">Naves Agrícolas</span>';
             break;
@@ -79,7 +77,7 @@
         case 'limpieza-y-mantenimiento-de-viviendas.php':
             $breadcrumbs = '<i class="fas fa-chevron-circle-right"></i>
                             <span id="estas-aqui">Estás aquí: </span>
-                            <span>Inicio</span>
+                            <span>Servicios</span>
                             <i class="fas fa-chevron-right"></i>
                             <span>Viviendas</span>
                             <i class="fas fa-chevron-right"></i>
@@ -90,9 +88,69 @@
         case 'taller-de-reparacion-de-maquinaria-agricola.php':
             $breadcrumbs = '<i class="fas fa-chevron-circle-right"></i>
                             <span id="estas-aqui">Estás aquí: </span>
-                            <span>Inicio</span>
+                            <span>Servicios</span>
                             <i class="fas fa-chevron-right"></i>
                             <span id="pagina-actual">Taller de reparación de maquinaria agrícola</span>';
+            break;
+
+        case 'proyectos-realizados.php':
+            $breadcrumbs = '<i class="fas fa-chevron-circle-right"></i>
+                            <span id="estas-aqui">Estás aquí: </span>
+                            <span id="pagina-actual">Proyectos realizados</span>';
+            break;
+
+        case 'proyecto-ikea-valladolid.php':
+            $breadcrumbs = '<i class="fas fa-chevron-circle-right"></i>
+                            <span id="estas-aqui">Estás aquí: </span>
+                            <span><a href="proyectos-realizados.php">Proyectos realizados</a></span>
+                            <i class="fas fa-chevron-right"></i>
+                            <span id="pagina-actual">IKEA (Valladolid)</span>';
+            break;
+
+        case 'proyecto-centro-logistico-coca-cola-badajoz.php':
+            $breadcrumbs = '<i class="fas fa-chevron-circle-right"></i>
+                            <span id="estas-aqui">Estás aquí: </span>
+                            <span><a href="proyectos-realizados.php">Proyectos realizados</a></span>
+                            <i class="fas fa-chevron-right"></i>
+                            <span id="pagina-actual">Centro logístico Coca-Cola (Badajoz)</span>';
+            break;
+
+        case 'proyecto-pascual-ubicacion.php':
+            $breadcrumbs = '<i class="fas fa-chevron-circle-right"></i>
+                            <span id="estas-aqui">Estás aquí: </span>
+                            <span><a href="proyectos-realizados.php">Proyectos realizados</a></span>
+                            <i class="fas fa-chevron-right"></i>
+                            <span id="pagina-actual">Pascual (¿Ubicación?)</span>';
+            break;
+
+        case 'proyecto-grupo-siro-medina-del-campo-valladolid.php':
+            $breadcrumbs = '<i class="fas fa-chevron-circle-right"></i>
+                            <span id="estas-aqui">Estás aquí: </span>
+                            <span><a href="proyectos-realizados.php">Proyectos realizados</a></span>
+                            <i class="fas fa-chevron-right"></i>
+                            <span id="pagina-actual">Grupo SIRO (Medina del Campo, Valladolid)</span>';
+            break;
+
+        case 'proyecto-galletas-gullon-ubicacion.php':
+            $breadcrumbs = '<i class="fas fa-chevron-circle-right"></i>
+                            <span id="estas-aqui">Estás aquí: </span>
+                            <span><a href="proyectos-realizados.php">Proyectos realizados</a></span>
+                            <i class="fas fa-chevron-right"></i>
+                            <span id="pagina-actual">Galletas Gullón (¿Ubicación?)</span>';
+            break;
+
+        case 'proyecto-pista-de-fronton-aleamayor-valladolid.php':
+            $breadcrumbs = '<i class="fas fa-chevron-circle-right"></i>
+                            <span id="estas-aqui">Estás aquí: </span>
+                            <span><a href="proyectos-realizados.php">Proyectos realizados</a></span>
+                            <i class="fas fa-chevron-right"></i>
+                            <span id="pagina-actual">Pista de Frontón (Aleamayor, Valladolid)</span>';
+            break;
+
+        case 'contacto.php':
+            $breadcrumbs = '<i class="fas fa-chevron-circle-right"></i>
+                            <span id="estas-aqui">Estás aquí: </span>
+                            <span id="pagina-actual">Contacto</span>';
             break;
         
         default:
@@ -173,8 +231,7 @@
                             $nombre_del_archivo_de_la_pagina_actual == "cubiertas.php" || 
                             $nombre_del_archivo_de_la_pagina_actual == "reformas.php" || 
                             $nombre_del_archivo_de_la_pagina_actual == "reparaciones.php" || 
-                            $nombre_del_archivo_de_la_pagina_actual == "limpieza-y-mantenimiento-de-naves-industriales.php" || 
-                            $nombre_del_archivo_de_la_pagina_actual == "naves-agricolas.php" ) ? 'active' : '' );
+                            $nombre_del_archivo_de_la_pagina_actual == "limpieza-y-mantenimiento-de-naves-industriales.php" ) ? 'active' : '' );
                     ?>"
                 >Naves industriales</a>
                 

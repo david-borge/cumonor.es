@@ -1,35 +1,30 @@
 <footer>
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-6">
+            <div id="footer-servicios" class="col-12 col-md-6">
 
                 <h5>Servicios</h5>
 
                 <div class="row">
-                    <div class="col-12 col-md-6">
+                    <div class="col-12">
+
                         <h6>Naves industriales</h6>
-                        <p><a href="estructuras-metalicas.php">Estructuras Metálicas</a></li>
-                        </p>
-                        <p><a href="cubiertas.php">Cubiertas</a></li>
-                        </p>
-                        <p><a href="reformas.php">Reformas</a></li>
-                        </p>
-                        <p><a href="reparaciones.php">Reparaciones</a></li>
-                        </p>
-                        <p><a href="limpieza-y-mantenimiento-de-naves-industriales.php">Limpieza y Mantenimiento</a></li>
-                        </p>
+
+                        <p><a href="estructuras-metalicas.php">Estructuras Metálicas</a></li></p>
+                        <p><a href="cubiertas.php">Cubiertas</a></li></p>
+                        <p><a href="reformas.php">Reformas</a></li></p>
+                        <p><a href="reparaciones.php">Reparaciones</a></li></p>
+                        <p><a href="limpieza-y-mantenimiento-de-naves-industriales.php">Limpieza y Mantenimiento</a></li></p>
                     </div>
-                    <div class="col-12 col-md-3">
-                        <h6><a href="naves-agricolas.php">Naves Agrícolas</a></li>
-                        </h6>
+                    <div class="col-12">
+                        <h6><a href="naves-agricolas.php">Naves Agrícolas</a></li></h6>
                     </div>
-                    <div class="col-12 col-md-3">
+                    <div class="col-12">
                         <h6>Viviendas</h6>
                         <p><a href="limpieza-y-mantenimiento-de-viviendas.php">Limpieza y Mantenimiento</a></p>
                     </div>
-                    <div class="col-12 col-md-3">
-                        <h6><a href="taller-de-reparacion-de-maquinaria-agricola.php">Taller de reparación de maquinaria agrícola</a></li>
-                        </h6>
+                    <div class="col-12">
+                        <h6><a href="taller-de-reparacion-de-maquinaria-agricola.php">Taller de reparación de maquinaria agrícola</a></li></h6>
                     </div>
                 </div>
 

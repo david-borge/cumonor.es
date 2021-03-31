@@ -128,7 +128,7 @@
             <div class="row">
                 <div class="col-12 col-md-4">
 
-                    <div class="proyecto-realizado">
+                    <div class="tarjeta-con-sombra-y-zoom-en-hover">
                         <a href="proyecto-ikea-valladolid.php">
                             <amp-img src="images/proyectos-realizados/ikea-valladolid/ikea-valladolid-miniatura.jpg"
                                 width="400"
@@ -146,7 +146,7 @@
                 </div>
                 <div class="col-12 col-md-4">
 
-                    <div class="proyecto-realizado">
+                    <div class="tarjeta-con-sombra-y-zoom-en-hover">
                         <a href="proyecto-centro-logistico-coca-cola-badajoz.php">
                             <amp-img src="images/proyectos-realizados/centro-logistico-coca-cola-badajoz/centro-logistico-coca-cola-badajoz-miniatura.jpg"
                                 width="400"
@@ -164,7 +164,7 @@
                 </div>
                 <div class="col-12 col-md-4">
 
-                    <div class="proyecto-realizado">
+                    <div class="tarjeta-con-sombra-y-zoom-en-hover">
                         <a href="proyecto-pascual-ubicacion.php">
                             <amp-img src="images/proyectos-realizados/pascual-ubicacion/pascual-ubicacion-miniatura.jpg"
                                 width="400"
@@ -185,7 +185,7 @@
             <div class="row">
                 <div class="col-12 col-md-4">
 
-                    <div class="proyecto-realizado">
+                    <div class="tarjeta-con-sombra-y-zoom-en-hover">
                         <a href="proyecto-grupo-siro-medina-del-campo-valladolid.php">
                             <amp-img src="images/proyectos-realizados/grupo-siro-medina-del-campo-valladolid/grupo-siro-medina-del-campo-valladolid-miniatura.jpg"
                                 width="400"
@@ -203,7 +203,7 @@
                 </div>
                 <div class="col-12 col-md-4">
 
-                    <div class="proyecto-realizado">
+                    <div class="tarjeta-con-sombra-y-zoom-en-hover">
                         <a href="proyecto-galletas-gullon-ubicacion.php">
                             <amp-img src="images/proyectos-realizados/galletas-gullon-ubicacion/galletas-gullon-ubicacion-miniatura.jpg"
                                 width="400"
@@ -221,7 +221,7 @@
                 </div>
                 <div class="col-12 col-md-4">
 
-                    <div class="proyecto-realizado">
+                    <div class="tarjeta-con-sombra-y-zoom-en-hover">
                         <a href="proyecto-pista-de-fronton-aleamayor-valladolid.php">
                             <amp-img src="images/proyectos-realizados/pista-de-fronton-aleamayor-valladolid/pista-de-fronton-aleamayor-valladolid-miniatura.jpg"
                                 width="400"
@@ -277,7 +277,7 @@
 
             <amp-selector id="ampSelector" [selected]="carousel.selectedSlide"
                 on="select:AMP.setState({carousel: {selectedSlide:event.targetOption}})">
-                <amp-carousel layout="fixed-height" height="78" class="thumbnail-carousel">
+                <amp-carousel layout="fixed-height" height="20" class="thumbnail-carousel">
                     <amp-img src="https://cdn.glitch.com/d7f46a57-0ca4-4cca-ab0f-69068dec6631%2Fcheddar-chaser-thumb.jpg?1540228250623"
                         option="0" selected role="button" tabindex="1" width="96" height="72" layout="fixed"></amp-img>
                     <amp-img src="https://cdn.glitch.com/d7f46a57-0ca4-4cca-ab0f-69068dec6631%2Fcheese-thumb.jpg?1540228249992"

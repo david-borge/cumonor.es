@@ -25,11 +25,11 @@
     <!-- TODO: quitar las innecesarias. -->
     <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
     <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
-    <script async custom-element="amp-lightbox-gallery" src="https://cdn.ampproject.org/v0/amp-lightbox-gallery-0.1.js"></script>
     <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
-    <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+    <script async custom-element="amp-lightbox-gallery" src="https://cdn.ampproject.org/v0/amp-lightbox-gallery-0.1.js"></script>
     <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
-    <script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
+    <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+    <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
     
 
 
@@ -113,9 +113,9 @@
                 <div class="row">
                     <div class="col-12">
 
-                        <h1>Taller de reparación de maquinaria agrícola</h1>
+                        <h1>Taller de Reparación de Maquinaria Agrícola</h1>
 
-                        <p class="text-center">Subtítulo con <span class="destacar">texto destacado</span>.</p>
+                        <p class="text-center">Rápido y a precio asequible</p>
                         
                     </div>
                 </div>
@@ -123,39 +123,14 @@
         </div>
 
         <div class="container">
+
             <div class="row">
-                <div class="col-md-9">
+                <div class="col-md-8">
 
-                    <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+                    <p class="text-justify">Texto del Taller de Reparación de Maquinaria Agrícola. Texto del Taller de Reparación de Maquinaria Agrícola. Texto del Taller de Reparación de Maquinaria Agrícola. Texto del Taller de Reparación de Maquinaria Agrícola. Texto del Taller de Reparación de Maquinaria Agrícola.</p>
+                    <p class="text-justify">Texto del Taller de Reparación de Maquinaria Agrícola. Texto del Taller de Reparación de Maquinaria Agrícola. Texto del Taller de Reparación de Maquinaria Agrícola. Texto del Taller de Reparación de Maquinaria Agrícola. Texto del Taller de Reparación de Maquinaria Agrícola.</p>
 
-                    <p>Ea tempor consequat non in est quis duis ea laboris culpa ipsum minim aute. Labore voluptate Lorem incididunt nulla anim ullamco. Aute ut ex occaecat sunt veniam aliquip laborum esse consequat elit cillum.</p>
-                    <p>Exercitation magna nostrud velit consequat irure anim. Nulla ipsum eiusmod aute est. Nisi non ullamco aliqua ea ea consequat sint eu consectetur anim. Ex Lorem et ad eu et eiusmod laboris. Aute fugiat occaecat consequat occaecat nulla ea pariatur id. In exercitation aliqua enim amet Lorem amet cillum non.</p>
-
-                </div>
-                <div class="col-md-3">
-
-                    <div id="precio-card" class="card mb-4 shadow-sm">
-                        <div class="card-header">
-                            <h4 class="my-0 font-weight-normal">Precio</h4>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title pricing-card-title">15 €</h5>
-                            <ul class="list-unstyled mt-3 mb-4">
-                                <li>Característica 1</li>
-                                <li>Característica 2</li>
-                                <li>Característica 3</li>
-                                <li>Característica 4</li>
-                            </ul>
-                            <button type="button" class="btn btn-lg btn-block btn-primary">Contactar</button>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    
-                    <amp-state id="carousel1">
+                    <amp-state id="carousel">
                         <script type="application/json">
                             {
                                 "selectedSlide": 0
@@ -163,49 +138,95 @@
                         </script>
                     </amp-state>
 
-                    <amp-carousel on="slideChange:AMP.setState({carousel1: {selectedSlide:event.index}})"
-                        [slide]="carousel1.selectedSlide" lightbox id="imageSlides1" layout="intrinsic"
-                        width="1600" height="1200" type="slides" loop>
-                        <div class="slide">
-                            <amp-img src="images/proyectos-realizados/ikea-valladolid/ikea-valladolid-01.jpg"
-                                width="1600" height="1200" layout="intrinsic"></amp-img>
-                        </div>
-                        <div class="slide">
-                            <amp-img src="images/proyectos-realizados/ikea-valladolid/ikea-valladolid-02.jpg"
-                                width="1600" height="1200" layout="intrinsic"></amp-img>
-                        </div>
-                        <div class="slide">
-                            <amp-img src="images/proyectos-realizados/ikea-valladolid/ikea-valladolid-03.jpg"
-                                width="1600" height="1200" layout="intrinsic"></amp-img>
-                        </div>
-                        <div class="slide">
-                            <amp-img src="images/proyectos-realizados/ikea-valladolid/ikea-valladolid-04.jpg"
-                                width="1600" height="1200" layout="intrinsic"></amp-img>
-                        </div>
-                        <div class="slide">
-                            <amp-img src="images/proyectos-realizados/ikea-valladolid/ikea-valladolid-05.jpg"
-                                width="1600" height="1200" layout="intrinsic"></amp-img>
-                        </div>
+                    <amp-carousel on="slideChange:AMP.setState({carousel: {selectedSlide:event.index}})"
+                        [slide]="carousel.selectedSlide" 
+                        lightbox layout="responsive" width="4" height="3" type="slides" loop>
+
+                        <?php
+                            $ruta_de_las_imagenes_de_la_galeria = 'images/servicios/taller-de-reparacion-de-maquinaria-agricola/';
+                            $files = scandir($ruta_de_las_imagenes_de_la_galeria);
+                            $i = 0;
+                            foreach($files as $file) {
+                                if( $i >= 2 && ( endsWith($file, '.jpg') || endsWith($file, '.png') ) && !strpos($file, 'miniatura') ) {
+                                    ?>
+
+                                        <div class="slide">
+                                            <amp-img src="<?= $ruta_de_las_imagenes_de_la_galeria.$file ?>" width="4" height="3" layout="responsive"></amp-img>
+                                        </div>
+
+                                    <?php
+                                }
+                                $i++;
+                            }
+
+                            function endsWith( $haystack, $needle ) {
+                                $length = strlen( $needle );
+                                if( !$length ) {
+                                    return true;
+                                }
+                                return substr( $haystack, -$length ) === $needle;
+                            }
+                        ?>
+                        
                     </amp-carousel>
 
-                    <amp-selector id="ampSelector" [selected]="carousel1.selectedSlide"
-                        on="select:AMP.setState({carousel1: {selectedSlide:event.targetOption}})">
-                        <amp-carousel layout="intrinsic" width="1600" height="72" class="thumbnail-carousel">
-                            <amp-img src="images/proyectos-realizados/ikea-valladolid/ikea-valladolid-01.jpg" selected
-                                option="0" role="button" tabindex="1" width="96" height="72" layout="fixed"></amp-img>
-                            <amp-img src="images/proyectos-realizados/ikea-valladolid/ikea-valladolid-02.jpg"
-                                option="1" role="button" tabindex="1"  width="96" height="72" layout="fixed"></amp-img>
-                            <amp-img src="images/proyectos-realizados/ikea-valladolid/ikea-valladolid-03.jpg"
-                                option="2" role="button" tabindex="1" width="96" height="72" layout="fixed"></amp-img>
-                            <amp-img src="images/proyectos-realizados/ikea-valladolid/ikea-valladolid-04.jpg"
-                                option="3" role="button" tabindex="1" width="96" height="72" layout="fixed"></amp-img>
-                            <amp-img src="images/proyectos-realizados/ikea-valladolid/ikea-valladolid-05.jpg"
-                                option="4" role="button" tabindex="1" width="96" height="72" layout="fixed"></amp-img>
+                    <amp-selector class="d-flex justify-content-center" [selected]="carousel.selectedSlide"
+                        on="select:AMP.setState({carousel: {selectedSlide:event.targetOption}})">
+                        <amp-carousel layout="fixed-height" height="20" class="thumbnail-carousel">
+
+                            <?php
+                                $i = 0;
+                                $j = 0;
+                                foreach($files as $file) {
+                                    if( $i >= 2 && ( endsWith($file, '.jpg') || endsWith($file, '.png') ) && !strpos($file, 'miniatura') ) {
+                                        ?>
+    
+                                            <div class="carrusel-punto" style="outline: none;" option="<?= $j ?>" <?= ($j == 0) ? 'selected' : '' ?> role="button" tabindex="1"></div>
+    
+                                        <?php
+                                        $j++;
+                                    }
+                                    $i++;
+                                }
+                            ?>
+
                         </amp-carousel>
                     </amp-selector>
 
                 </div>
+                <div class="col-md-4">
+
+                    <div id="precio-card" class="card mb-4 shadow-sm">
+                        <div class="card-header">
+                            <h4 class="mb-1 font-weight-bold text-center">Pide presupuesto</h4>
+                            <p class="text-center mb-0">(Sin compromiso)</p>
+                        </div>
+                        <div class="card-body">
+                            <form id="formulario" action="enviar-formulario-contacto.php" target="_top">
+                                <div class="form-group">
+                                    <label for="nombre_y_apellidos">Nombre y apellidos</label>
+                                    <input id="nombre_y_apellidos" name="nombre_y_apellidos" type="email" class="form-control" aria-describedby="nombreHelp" required="required">
+                                </div>
+                                <div class="form-group">
+                                    <label for="correo_electronico">Correo electrónico</label>
+                                    <input id="correo_electronico" name="correo_electronico" type="email" class="form-control" aria-describedby="emailHelp" required="required">
+                                </div>
+                                <div class="form-group">
+                                    <label for="telefono">Teléfono (Opcional)</label>
+                                    <input id="telefono" name="telefono" type="tel" class="form-control" aria-describedby="telHelp">
+                                </div>
+                                <div class="form-group">
+                                    <label for="mensaje">Mensaje (Opcional)</label>
+                                    <textarea id="mensaje" name="mensaje" class="form-control" required="required"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Pedir presupuesto</button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
             </div>
+
         </div>
         
     </main>
