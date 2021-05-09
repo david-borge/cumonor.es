@@ -300,7 +300,7 @@
 
                         <div class="ventaja texto">
                             <h3>Maquinaria propia</h3>
-                            <p>[Breve texto respecto a la maquinaria propia.]</p>
+                            <p>Camiones y maquinaria elevadora de seguridad.</p>
                         </div>
 
                         <div class="ventaja texto">
@@ -329,10 +329,10 @@
                                         width="400"
                                         height="300"
                                         layout="intrinsic"
-                                        alt="Estructuras Metálicas">
+                                        alt="Estructuras<!--  Metálicas -->">
                                     </amp-img>
                                     <div class="informacion">
-                                        <h3>Estructuras Metálicas</h3>
+                                        <h3>Estructuras<!--  Metálicas --></h3>
                                     </div>
                                 </a>
                             </div>
@@ -358,15 +358,15 @@
                         <div class="col-12 col-md-4">
 
                             <div class="tarjeta-con-sombra-y-zoom-en-hover">
-                                <a href="reformas.php">
+                                <a href="fachadas.php">
                                     <amp-img src="images/placeholder.jpg"
                                         width="400"
                                         height="300"
                                         layout="intrinsic"
-                                        alt="Reformas">
+                                        alt="Fachadas">
                                     </amp-img>
                                     <div class="informacion">
-                                        <h3>Reformas <br>de Naves Industriales</h3>
+                                        <h3>Fachadas <br>de Naves Industriales</h3>
                                     </div>
                                 </a>
                             </div>
@@ -378,15 +378,15 @@
                         <div class="col-12 col-md-4">
 
                             <div class="tarjeta-con-sombra-y-zoom-en-hover">
-                                <a href="reparaciones.php">
+                                <a href="reparaciones-y-reformas.php">
                                     <amp-img src="images/servicios/reparaciones/reparaciones-miniatura.jpg"
                                         width="400"
                                         height="300"
                                         layout="intrinsic"
-                                        alt="Reparaciones">
+                                        alt="Reparaciones y reformas">
                                     </amp-img>
                                     <div class="informacion">
-                                        <h3 style="min-height: 48px;">Reparaciones</h3>
+                                        <h3 style="min-height: 48px;">Reparaciones y reformas</h3>
                                     </div>
                                 </a>
                             </div>
@@ -409,7 +409,7 @@
                             </div>
 
                         </div>
-                        <div class="col-12 col-md-4">
+                        <!-- <div class="col-12 col-md-4">
 
                             <div class="tarjeta-con-sombra-y-zoom-en-hover">
                                 <a href="naves-agricolas.php">
@@ -425,7 +425,7 @@
                                 </a>
                             </div>
 
-                        </div>
+                        </div> -->
                     </div>
 
                     <div class="row" style='margin-top: 30px;'>

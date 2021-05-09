@@ -8,17 +8,17 @@
                 <div class="row">
                     <div class="col-12">
 
-                        <h6>Naves industriales</h6>
+                        <h6>Naves<!--  industriales --></h6>
 
-                        <p><a href="estructuras-metalicas.php">Estructuras Metálicas</a></li></p>
+                        <p><a href="estructuras-metalicas.php">Estructuras<!--  Metálicas --></a></li></p>
                         <p><a href="cubiertas.php">Cubiertas</a></li></p>
-                        <p><a href="reformas.php">Reformas</a></li></p>
-                        <p><a href="reparaciones.php">Reparaciones</a></li></p>
+                        <p><a href="fachadas.php">Fachadas</a></li></p>
+                        <p><a href="reparaciones-y-reformas.php">Reparaciones y reformas</a></li></p>
                         <p><a href="limpieza-y-mantenimiento-de-naves-industriales.php">Limpieza y Mantenimiento</a></li></p>
                     </div>
-                    <div class="col-12">
+                    <!-- <div class="col-12">
                         <h6><a href="naves-agricolas.php">Naves Agrícolas</a></li></h6>
-                    </div>
+                    </div> -->
                     <div class="col-12">
                         <h6>Viviendas</h6>
                         <p><a href="limpieza-y-mantenimiento-de-viviendas.php">Limpieza y Mantenimiento</a></p>

@@ -228,7 +228,7 @@
                     <form id="formulario" action="enviar-formulario-contacto.php" target="_top">
                         <div class="form-group">
                             <label for="nombre_y_apellidos">Nombre y apellidos</label>
-                            <input id="nombre_y_apellidos" name="nombre_y_apellidos" type="email" class="form-control" aria-describedby="nombreHelp" required="required">
+                            <input id="nombre_y_apellidos" name="nombre_y_apellidos" type="text" class="form-control" aria-describedby="nombreHelp" required="required">
                         </div>
                         <div class="form-group">
                             <label for="correo_electronico">Correo electrónico</label>
@@ -240,7 +240,7 @@
                         </div>
                         <div class="form-group">
                             <label for="mensaje">Mensaje (Opcional)</label>
-                            <textarea id="mensaje" name="mensaje" class="form-control" required="required"></textarea>
+                            <textarea id="mensaje" name="mensaje" class="form-control"></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary w-100">Enviar mensaje</button>
                     </form>

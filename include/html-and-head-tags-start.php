@@ -4,7 +4,7 @@
 
 <head>
 
-    <!-- TODO: quitar al publicar -->
+    <!-- TODO: quitar en producción -->
     <!-- Deshabilitar la Visibilidad en los motores de búsqueda -->
     <meta name="robots" content="noindex,nofollow" />
 

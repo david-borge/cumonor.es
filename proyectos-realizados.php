@@ -166,7 +166,7 @@
 
                     <div class="tarjeta-con-sombra-y-zoom-en-hover">
                         <a href="proyecto-pascual-ubicacion.php">
-                            <amp-img src="images/proyectos-realizados/pascual-ubicacion/pascual-ubicacion-miniatura.jpg"
+                            <amp-img src="images/placeholder.jpg"
                                 width="400"
                                 height="300"
                                 layout="intrinsic"

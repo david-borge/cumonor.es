@@ -10,6 +10,7 @@
     switch ($nombre_del_archivo_de_la_pagina_actual) {
 
         case 'cumonor.es':
+        case 'pruebas':  // TODO: quitar en producción
         case 'index.php':
             $breadcrumbs = '<i class="fas fa-chevron-circle-right"></i>
                             <span id="estas-aqui">Estás aquí: </span>
@@ -21,9 +22,9 @@
                             <span id="estas-aqui">Estás aquí: </span>
                             <span>Servicios</span>
                             <i class="fas fa-chevron-right"></i>
-                            <span>Naves industriales</span>
+                            <span>Naves/*  industriales */</span>
                             <i class="fas fa-chevron-right"></i>
-                            <span id="pagina-actual">Estructuras metálicas</span>';
+                            <span id="pagina-actual">Estructuras/*  metálicas */</span>';
             break;
         
         case 'cubiertas.php':
@@ -31,29 +32,29 @@
                             <span id="estas-aqui">Estás aquí: </span>
                             <span>Servicios</span>
                             <i class="fas fa-chevron-right"></i>
-                            <span>Naves industriales</span>
+                            <span>Naves/*  industriales */</span>
                             <i class="fas fa-chevron-right"></i>
                             <span id="pagina-actual">Cubiertas</span>';
             break;
         
-        case 'reformas.php':
+        case 'fachadas.php':
             $breadcrumbs = '<i class="fas fa-chevron-circle-right"></i>
                             <span id="estas-aqui">Estás aquí: </span>
                             <span>Servicios</span>
                             <i class="fas fa-chevron-right"></i>
-                            <span>Naves industriales</span>
+                            <span>Naves/*  industriales */</span>
                             <i class="fas fa-chevron-right"></i>
-                            <span id="pagina-actual">Reformas</span>';
+                            <span id="pagina-actual">Fachadas</span>';
             break;
         
-        case 'reparaciones.php':
+        case 'reparaciones-y-reformas.php':
             $breadcrumbs = '<i class="fas fa-chevron-circle-right"></i>
                             <span id="estas-aqui">Estás aquí: </span>
                             <span>Servicios</span>
                             <i class="fas fa-chevron-right"></i>
-                            <span>Naves industriales</span>
+                            <span>Naves/*  industriales */</span>
                             <i class="fas fa-chevron-right"></i>
-                            <span id="pagina-actual">Reparaciones</span>';
+                            <span id="pagina-actual">Reparaciones y reformas</span>';
             break;
         
         case 'limpieza-y-mantenimiento-de-naves-industriales.php':
@@ -61,18 +62,18 @@
                             <span id="estas-aqui">Estás aquí: </span>
                             <span>Servicios</span>
                             <i class="fas fa-chevron-right"></i>
-                            <span>Naves industriales</span>
+                            <span>Naves/*  industriales */</span>
                             <i class="fas fa-chevron-right"></i>
                             <span id="pagina-actual">Limpieza y Mantenimiento</span>';
             break;
         
-        case 'naves-agricolas.php':
+        /* case 'naves-agricolas.php':
             $breadcrumbs = '<i class="fas fa-chevron-circle-right"></i>
                             <span id="estas-aqui">Estás aquí: </span>
                             <span>Servicios</span>
                             <i class="fas fa-chevron-right"></i>
                             <span id="pagina-actual">Naves Agrícolas</span>';
-            break;
+            break; */
         
         case 'limpieza-y-mantenimiento-de-viviendas.php':
             $breadcrumbs = '<i class="fas fa-chevron-circle-right"></i>
@@ -229,27 +230,27 @@
                 <a class="nav-link dropdown-toggle 
                     <?= ( ( $nombre_del_archivo_de_la_pagina_actual == "estructuras-metalicas.php" || 
                             $nombre_del_archivo_de_la_pagina_actual == "cubiertas.php" || 
-                            $nombre_del_archivo_de_la_pagina_actual == "reformas.php" || 
-                            $nombre_del_archivo_de_la_pagina_actual == "reparaciones.php" || 
+                            $nombre_del_archivo_de_la_pagina_actual == "fachadas.php" || 
+                            $nombre_del_archivo_de_la_pagina_actual == "reparaciones-y-reformas.php" || 
                             $nombre_del_archivo_de_la_pagina_actual == "limpieza-y-mantenimiento-de-naves-industriales.php" ) ? 'active' : '' );
                     ?>"
-                >Naves industriales</a>
+                >Naves<!--  industriales --></a>
                 
                 <div id="nav-item--dropdown-menu--naves-industriales" class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <!-- <h6 class="dropdown-header">Naves Industriales</h6> -->
-                    <a class="dropdown-item <?= ( ( $nombre_del_archivo_de_la_pagina_actual == "estructuras-metalicas.php" ) ? 'active' : '' ); ?>" href="estructuras-metalicas.php">Estructuras Metálicas</a>
+                    <a class="dropdown-item <?= ( ( $nombre_del_archivo_de_la_pagina_actual == "estructuras-metalicas.php" ) ? 'active' : '' ); ?>" href="estructuras-metalicas.php">Estructuras<!--  Metálicas --></a>
                     <a class="dropdown-item <?= ( ( $nombre_del_archivo_de_la_pagina_actual == "cubiertas.php" ) ? 'active' : '' ); ?>" href="cubiertas.php">Cubiertas</a>
-                    <a class="dropdown-item <?= ( ( $nombre_del_archivo_de_la_pagina_actual == "reformas.php" ) ? 'active' : '' ); ?>" href="reformas.php">Reformas</a>
-                    <a class="dropdown-item <?= ( ( $nombre_del_archivo_de_la_pagina_actual == "reparaciones.php" ) ? 'active' : '' ); ?>" href="reparaciones.php">Reparaciones</a>
+                    <a class="dropdown-item <?= ( ( $nombre_del_archivo_de_la_pagina_actual == "fachadas.php" ) ? 'active' : '' ); ?>" href="fachadas.php">Fachadas</a>
+                    <a class="dropdown-item <?= ( ( $nombre_del_archivo_de_la_pagina_actual == "reparaciones-y-reformas.php" ) ? 'active' : '' ); ?>" href="reparaciones-y-reformas.php">Reparaciones y reformas</a>
                     <a class="dropdown-item <?= ( ( $nombre_del_archivo_de_la_pagina_actual == "limpieza-y-mantenimiento-de-naves-industriales.php" ) ? 'active' : '' ); ?>" href="limpieza-y-mantenimiento-de-naves-industriales.php">Limpieza y Mantenimiento</a>
                 </div>
 
             </li>
 
             
-            <li class="nav-item">
+            <!-- <li class="nav-item">
                 <a class="nav-link <?= ( ( $nombre_del_archivo_de_la_pagina_actual == "naves-agricolas.php" ) ? 'active' : '' ); ?>" href="naves-agricolas.php">Naves Agrícolas</a>
-            </li>
+            </li> -->
 
             <li id="nav-item--naves-industriales" class="nav-item dropdown">
                 
@@ -261,8 +262,16 @@
 
             </li>
 
-            <li class="nav-item">
-                <a class="nav-link <?= ( ( $nombre_del_archivo_de_la_pagina_actual == "taller-de-reparacion-de-maquinaria-agricola.php" ) ? 'active' : '' ); ?>" href="taller-de-reparacion-de-maquinaria-agricola.php" title="Taller de reparación de maquinaria agrícola">Taller</a>
+            <li id="nav-item--naves-industriales" class="nav-item dropdown">
+                
+                <a class="nav-link dropdown-toggle <?= ( ( $nombre_del_archivo_de_la_pagina_actual == "taller-de-reparacion-de-maquinaria-agricola.php" ) ? 'active' : '' ); ?>">Taller</a>
+                
+                <div id="nav-item--dropdown-menu--naves-industriales" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item <?= ( ( $nombre_del_archivo_de_la_pagina_actual == "taller-de-reparacion-de-maquinaria-agricola.php" ) ? 'active' : '' ); ?>" href="#">Estructura</a>
+                    <a class="dropdown-item <?= ( ( $nombre_del_archivo_de_la_pagina_actual == "taller-de-reparacion-de-maquinaria-agricola.php" ) ? 'active' : '' ); ?>" href="#">Rematería</a>
+                    <a class="dropdown-item <?= ( ( $nombre_del_archivo_de_la_pagina_actual == "taller-de-reparacion-de-maquinaria-agricola.php" ) ? 'active' : '' ); ?>" href="#">Reparación de maquinaria agrícola</a>
+                </div>
+
             </li>
 
             <li class="nav-item">
@@ -302,19 +311,19 @@
             <li class="nav-dropdown">
                 <amp-accordion layout="container" animate disable-session-states class="dropdown">
                     <section>
-                        <header>Naves Industriales</header>
+                        <header>Naves<!--  Industriales --></header>
                         <ul class="dropdown-items">
                             <li class="dropdown-item">
-                                <a href="estructuras-metalicas.php">Estructuras Metálicas</a>
+                                <a href="estructuras-metalicas.php">Estructuras<!--  Metálicas --></a>
                             </li>
                             <li class="dropdown-item">
                                 <a href="cubiertas.php">Cubiertas</a>
                             </li>
                             <li class="dropdown-item">
-                                <a href="reformas.php">Reformas</a>
+                                <a href="fachadas.php">Fachadas</a>
                             </li>
                             <li class="dropdown-item">
-                                <a href="reparaciones.php">Reparaciones</a>
+                                <a href="reparaciones-y-reformas.php">Reparaciones y reformas</a>
                             </li>
                             <li class="dropdown-item">
                                 <a href="limpieza-y-mantenimiento-de-naves-industriales.php">Limpieza y Mantenimiento</a>
@@ -324,7 +333,7 @@
                 </amp-accordion>
             </li>
 
-            <li><a href="naves-agricolas.php">Naves Agrícolas</a></li>
+            <!-- <li><a href="naves-agricolas.php">Naves Agrícolas</a></li> -->
 
             <li class="nav-dropdown">
                 <amp-accordion layout="container" animate disable-session-states class="dropdown">

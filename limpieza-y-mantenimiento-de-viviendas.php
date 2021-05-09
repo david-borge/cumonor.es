@@ -2,7 +2,7 @@
 
 
     <!-- Título de esta página -->
-    <title>Limpieza y Mantenimiento de Viviendas - Cumonor</title>
+    <title>Limpieza y Mantenimiento de Tejados de Viviendas - Cumonor</title>
 
     <!-- Description de esta página -->
     <meta name="description" content="FALTA">
@@ -113,7 +113,7 @@
             <div class="row">
                 <div class="col-12">
 
-                    <h1>Limpieza y Mantenimiento <br>de Viviendas</h1>
+                    <h1>Limpieza y Mantenimiento <br>de Tejados de Viviendas</h1>
 
                     <p class="text-center">Subtítulo corto de unas 8 palabras.</p>
                     
@@ -127,8 +127,8 @@
             <div class="row">
                 <div class="col-md-8">
 
-                    <p class="text-justify">Texto de Limpieza y Mantenimiento de Viviendas. Texto de Limpieza y Mantenimiento de Viviendas. Texto de Limpieza y Mantenimiento de Viviendas. Texto de Limpieza y Mantenimiento de Viviendas. Texto de Limpieza y Mantenimiento de Viviendas.</p>
-                    <p class="text-justify">Texto de Limpieza y Mantenimiento de Viviendas. Texto de Limpieza y Mantenimiento de Viviendas. Texto de Limpieza y Mantenimiento de Viviendas. Texto de Limpieza y Mantenimiento de Viviendas. Texto de Limpieza y Mantenimiento de Viviendas.</p>
+                    <p class="text-justify">Texto de Limpieza y Mantenimiento de Tejados de Viviendas. Texto de Limpieza y Mantenimiento de Tejados de Viviendas. Texto de Limpieza y Mantenimiento de Tejados de Viviendas. Texto de Limpieza y Mantenimiento de Tejados de Viviendas. Texto de Limpieza y Mantenimiento de Tejados de Viviendas.</p>
+                    <p class="text-justify">Texto de Limpieza y Mantenimiento de Tejados de Viviendas. Texto de Limpieza y Mantenimiento de Tejados de Viviendas. Texto de Limpieza y Mantenimiento de Tejados de Viviendas. Texto de Limpieza y Mantenimiento de Tejados de Viviendas. Texto de Limpieza y Mantenimiento de Tejados de Viviendas.</p>
 
                     <amp-state id="carousel">
                         <script type="application/json">
@@ -205,7 +205,7 @@
                             <form id="formulario" action="enviar-formulario-contacto.php" target="_top">
                                 <div class="form-group">
                                     <label for="nombre_y_apellidos">Nombre y apellidos</label>
-                                    <input id="nombre_y_apellidos" name="nombre_y_apellidos" type="email" class="form-control" aria-describedby="nombreHelp" required="required">
+                                    <input id="nombre_y_apellidos" name="nombre_y_apellidos" type="text" class="form-control" aria-describedby="nombreHelp" required="required">
                                 </div>
                                 <div class="form-group">
                                     <label for="correo_electronico">Correo electrónico</label>
@@ -217,7 +217,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="mensaje">Mensaje (Opcional)</label>
-                                    <textarea id="mensaje" name="mensaje" class="form-control" required="required"></textarea>
+                                    <textarea id="mensaje" name="mensaje" class="form-control"></textarea>
                                 </div>
                                 <button type="submit" class="btn btn-primary w-100">Pedir presupuesto</button>
                             </form>
